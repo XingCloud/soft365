@@ -1,0 +1,56 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+
+<div id="content" align="center" class="container">
+<div id="create_alert"></div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="row-fluid">
+				<span style="float:left"><a class='btn btn-success'
+					style="margin-top: 10px; margin-bottom: 10px" href="/UserManage/add"><i
+					class="icon  icon-plus"></i>增加</a>
+					
+				</span>
+				
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>用户ID</th>
+							<th>用户名</th>
+							<th>说明</th>
+							<th>oemid</th>
+							<th>email</th>
+							<th>权限</th>
+							<th>最后登录时间</th>
+							<th>添加时间</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<volist name="data" id="user">
+						<tr>
+							<td>{$user["id"]}</td>
+							<td>{$user["name"]}
+								<if condition="$user['status'] neq 1"><b style='color:red;'>[{$status[$user['status']]}]</b></if></td>
+							<td>{$user["desc"]}</td>
+							<td>{$user["oemid"]}</td>
+							<td>{$user["email"]}</td>
+							<td><if condition='$user["is_admin"] eq "1" ' >超级管理员<else />管理员</if></td>
+							<td>{$user["last_login"]}</td>
+							<td>{$user["add_time"]}</td>
+							<td><a class="btn" href="/UserManage/edit?id={$user['id']}&locale={$user['locale']}"><i
+									class="icon  icon-edit"></i>编辑</a>
+							</td>
+						</tr>
+						</volist>
+					</tbody>
+				</table>
+				<div class="pagination">{$pagination}</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+<include file="Public:footer" />

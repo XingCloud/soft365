@@ -1,0 +1,26 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+
+		<form class="form-horizontal" method="post" action='set'>
+			<input type="hidden" id="userId" value="{$user['id']}">
+			<strong>修改用户信息</strong>
+			<div id="user_alert"></div>
+			<div class="control-group">
+				<label class="control-label">email</label>
+				<div class="controls">
+					<input type="text" name="email" id="inputEmail" value="{$user['email']}">
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<input type="submit" class="btn" value="修改"></input>
+				</div>
+			</div>
+		</form>
+
+        <!-- tail of sidebar -->
+        </div><!--/span-->
+      </div><!--/row-->
+    </div><!--/.fluid-container-->
+<include file="Public:footer" />

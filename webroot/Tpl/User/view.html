@@ -1,0 +1,21 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+
+<dl class="dl-horizontal">
+	<dt>用户名</dt>
+	<dd>{$user['name']}</dd>
+	<dt>email</dt>
+	<dd>{$user['email']}</dd>
+	<dt>登录时间</dt>
+	<dd>{$user['last_login']|date='Y-m-d H:i:s',###}</dd>
+</dl>
+
+<!-- tail of sidebar -->
+</div>
+<!--/span-->
+</div>
+<!--/row-->
+</div>
+<!--/.fluid-container-->
+<include file="Public:footer" />

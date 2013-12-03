@@ -1,0 +1,113 @@
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ route_check ] --START--
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Run CheckRoute Behavior [ RunTime:0.023104s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ route_check ] --END-- [ RunTime:0.023200s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002890s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Run CheckLang Behavior [ RunTime:0.020919s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.023941s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ action_begin ] --START--
+[ 2013-08-30T14:02:07+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 22 行.
+[ 2013-08-30T14:02:07+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 23 行.
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ route_check ] --START--
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Run CheckRoute Behavior [ RunTime:0.000270s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ route_check ] --END-- [ RunTime:0.000373s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000111s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Run CheckLang Behavior [ RunTime:0.000412s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000575s ]
+[ 2013-08-30T14:02:07+08:00 ] / | INFO: Tag[ action_begin ] --START--
+[ 2013-08-30T14:02:07+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 22 行.
+[ 2013-08-30T14:02:07+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 23 行.
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ route_check ] --START--
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Run CheckRoute Behavior [ RunTime:0.000312s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000368s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ app_begin ] --START--
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000119s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Run CheckLang Behavior [ RunTime:0.000499s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000682s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ action_begin ] --START--
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Run Login Behavior [ RunTime:0.000357s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000411s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ view_template ] --START--
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Run LocationTemplate Behavior [ RunTime:0.054170s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ view_template ] --END-- [ RunTime:0.054255s ]
+[ 2013-08-30T14:02:07+08:00 ] /User/login | INFO: Tag[ view_parse ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ParseTemplate Behavior [ RunTime:2.160892s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_parse ] --END-- [ RunTime:2.161074s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_filter ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ContentReplace Behavior [ RunTime:0.002664s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run TokenBuild Behavior [ RunTime:0.002080s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001774s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ShowRuntime Behavior [ RunTime:0.001914s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.008614s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_end ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ShowPageTrace Behavior [ RunTime:0.002383s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_end ] --END-- [ RunTime:0.002442s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ route_check ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run CheckRoute Behavior [ RunTime:0.000227s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000293s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ app_begin ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000253s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run CheckLang Behavior [ RunTime:0.001368s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001684s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ action_begin ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run Login Behavior [ RunTime:0.001131s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001180s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_template ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run LocationTemplate Behavior [ RunTime:0.001012s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_template ] --END-- [ RunTime:0.001164s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_parse ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ParseTemplate Behavior [ RunTime:0.009655s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009752s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_filter ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ContentReplace Behavior [ RunTime:0.000176s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run TokenBuild Behavior [ RunTime:0.000199s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000083s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ShowRuntime Behavior [ RunTime:0.000148s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000733s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_end ] --START--
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Run ShowPageTrace Behavior [ RunTime:0.000085s ]
+[ 2013-08-30T14:02:10+08:00 ] /User/login | INFO: Tag[ view_end ] --END-- [ RunTime:0.000116s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ route_check ] --START--
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run CheckRoute Behavior [ RunTime:0.000256s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ route_check ] --END-- [ RunTime:0.000330s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000158s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run CheckLang Behavior [ RunTime:0.001052s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001256s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ action_begin ] --START--
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 22 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 23 行.
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run Login Behavior [ RunTime:0.000581s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000611s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000157s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000187s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined index: user_name 948b69b7e74262b0af4cc87e8ce85c98.php 第 70 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: selectProductName 948b69b7e74262b0af4cc87e8ce85c98.php 第 79 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 83 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 84 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 85 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 87 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 88 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 89 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 90 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 91 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 93 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 94 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 95 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 96 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 97 行.
+[ 2013-08-30T14:16:26+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 98 行.
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.183038s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.183089s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000454s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000465s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000338s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000395s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001834s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000382s ]
+[ 2013-08-30T14:16:26+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000434s ]

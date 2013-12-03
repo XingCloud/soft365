@@ -1,0 +1,41 @@
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ route_check ] --START--
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run CheckRoute Behavior [ RunTime:0.003812s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ route_check ] --END-- [ RunTime:0.003907s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.006706s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run CheckLang Behavior [ RunTime:0.005046s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.011852s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ action_begin ] --START--
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 22 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 23 行.
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run Login Behavior [ RunTime:0.003977s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ action_begin ] --END-- [ RunTime:0.004044s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.002327s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.002395s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: selectProductName 948b69b7e74262b0af4cc87e8ce85c98.php 第 79 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 83 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 84 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 85 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 87 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 88 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined index: user 948b69b7e74262b0af4cc87e8ce85c98.php 第 89 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 94 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 96 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 97 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 98 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 99 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 100 行.
+[ 2013-10-10T14:16:49+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 101 行.
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.059308s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.059368s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.002512s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.026486s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001577s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.002002s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.032746s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.001969s ]
+[ 2013-10-10T14:16:49+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.002007s ]

@@ -1,0 +1,1 @@
+*/5 * * * * /home/elex/php/bin/php /home/v9/www/apps.soft365.com/webroot/cli.php Imp flush_to_db

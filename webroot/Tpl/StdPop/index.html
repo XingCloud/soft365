@@ -1,0 +1,69 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+
+<div id="content" align="center" class="container">
+<div id="create_alert"></div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="row-fluid">
+				<span style="float:left"><a class='btn btn-success'
+					style="margin-top: 10px; margin-bottom: 10px" href="/StdPop/add"><i
+					class="icon  icon-plus"></i>增加</a>
+					
+				</span>
+				
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>数据ID</th>
+							<th>标题</th>
+							<th>权重</th>
+							<th>指定语言</th>
+							<th>指定国家</th>
+							<th>指定人数</th>
+							<th>停留时间(秒)</th>
+							<th>生效开始日期</th>							
+							<th>生效开始时间</th>
+							<th>生效结束日期</th>							
+							<th>生效结束时间</th>
+							<th>添加时间</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<volist name="data" id="pop">
+						<tr>
+							<td>{$pop["id"]}</td>
+							<td><a target="_blank" href='{$pop["url"]}' >{$pop["title"]}</a>
+								<if condition="$pop['disabled'] eq 1"><b style='color:red;'>[停用]</b></if></td>
+							<td>{$pop["weight"]}</td>
+							<td>{$pop["lang"]}</td>
+							<td>{$pop["country"]}</td>
+							<td>{$pop["max_people"]}</td>
+							<td>{$pop["live_time"]}</td>
+							<td>{$pop["start_date"]}</td>
+							<td>{$pop["start_time"]}</td>
+							<td>{$pop["end_date"]}</td>
+							<td>{$pop["end_time"]}</td>
+							<td>{$pop["add_time"|date='Y-m-d H:i',###]}</td>
+							<td><a class="btn" href="/StdPop/edit?id={$pop['id']}&locale={$pop['locale']}"><i
+									class="icon  icon-edit"></i>编辑</a>&nbsp;
+									<a class="btn" href="/StdPop/add?copy_from_id={$pop['id']}&locale={$pop['locale']}"><i
+									class="icon  icon-share"></i>复制</a>&nbsp; 
+									<a class="btn" href="/StdPop/destroy?id={$pop['id']}"
+								onclick="return confirm('确认要删除吗?')"><i
+									class="icon  icon-trash"></i>删除</a>
+							</td>
+						</tr>
+						</volist>
+					</tbody>
+				</table>
+				<div class="pagination">{$pagination}</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+<include file="Public:footer" />

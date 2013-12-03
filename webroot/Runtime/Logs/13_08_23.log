@@ -1,0 +1,10 @@
+[ 2013-08-23T11:06:48+08:00 ] / | INFO: Tag[ route_check ] --START--
+[ 2013-08-23T11:06:48+08:00 ] / | INFO: Run CheckRoute Behavior [ RunTime:0.011393s ]
+[ 2013-08-23T11:06:48+08:00 ] / | INFO: Tag[ route_check ] --END-- [ RunTime:0.011540s ]
+[ 2013-08-23T11:06:48+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2013-08-23T11:06:48+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002683s ]
+[ 2013-08-23T11:06:48+08:00 ] / | INFO: Run CheckLang Behavior [ RunTime:0.012086s ]
+[ 2013-08-23T11:06:48+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.014879s ]
+[ 2013-08-23T11:06:48+08:00 ] / | INFO: Tag[ action_begin ] --START--
+[ 2013-08-23T11:06:48+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 22 行.
+[ 2013-08-23T11:06:48+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 23 行.

@@ -1,0 +1,717 @@
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000437s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000497s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000263s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.001572s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001906s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000847s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000888s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000788s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000849s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.011876s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011909s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000292s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000244s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000229s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000233s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001080s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000214s ]
+[ 2013-09-07T08:00:17+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000242s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000395s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000453s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000229s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.001548s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001839s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000761s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000792s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000602s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000662s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.010301s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010340s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.002167s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.001846s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001925s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.002064s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.008098s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.002179s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.002209s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000060s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000114s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000050s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000136s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000131s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000158s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000066s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000101s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.012032s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012065s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000096s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000064s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000051s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000307s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000035s ]
+[ 2013-09-07T08:00:20+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000058s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000456s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000516s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000237s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.001552s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001845s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000888s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000924s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000608s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000646s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.008867s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008909s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000251s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000297s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000188s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000201s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001022s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000225s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000252s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000048s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000097s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000042s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000127s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000208s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000101s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000127s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000066s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000099s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.010401s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010433s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000108s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000066s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000027s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000050s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000328s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000035s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000049s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000111s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000068s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000151s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000268s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000111s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000138s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000061s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000094s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.009794s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009827s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000109s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000065s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000051s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000318s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000036s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000060s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000058s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000116s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000045s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000128s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000213s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000106s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000141s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000084s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000119s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.009637s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009670s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000130s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000081s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000052s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000364s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-09-07T08:00:21+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000062s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000428s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000521s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000281s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.003586s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003936s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.001673s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001726s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.001027s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.001087s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.010622s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010657s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000245s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000231s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000202s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000208s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000968s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000418s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000449s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000047s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000094s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000043s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000166s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000248s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000100s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000127s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000072s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000112s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.013675s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013731s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000255s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000075s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000036s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000110s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000551s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000042s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000046s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000091s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000040s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000144s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000224s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000128s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000169s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000056s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000096s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.010894s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010928s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000093s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000062s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000049s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000297s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000056s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000050s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000098s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000042s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000264s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000346s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000164s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000193s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000060s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000094s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.008047s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008080s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000095s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000064s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000028s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000050s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000304s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000047s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000091s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000041s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000129s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000208s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000100s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000125s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000055s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000088s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.009608s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009649s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000118s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000068s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000034s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000051s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000341s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000041s ]
+[ 2013-09-07T08:00:23+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000065s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run CheckRoute Behavior [ RunTime:0.000499s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000593s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000391s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run CheckLang Behavior [ RunTime:0.001475s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001922s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run Login Behavior [ RunTime:0.001994s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.002039s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | SQL: SHOW COLUMNS FROM `std_pop` [ RunTime:0.001367s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | SQL: SELECT COUNT(*) AS tp_count FROM `std_pop` LIMIT 1   [ RunTime:0.000478s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | SQL: SELECT * FROM `std_pop` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000577s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001129s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001167s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: selectProductName c0b8c0fc882b778550dabbc9dfd1d849.php 第 79 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 83 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 84 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 85 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 87 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 88 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 89 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 90 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 91 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 92 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 94 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 95 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 96 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 97 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 98 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 99 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run ParseTemplate Behavior [ RunTime:0.012082s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012114s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run ContentReplace Behavior [ RunTime:0.000602s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run TokenBuild Behavior [ RunTime:0.000593s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000316s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000333s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001934s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000470s ]
+[ 2013-09-07T08:00:08+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000503s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Run CheckRoute Behavior [ RunTime:0.000058s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ route_check ] --END-- [ RunTime:0.000115s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000052s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Run CheckLang Behavior [ RunTime:0.000471s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000568s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Run Login Behavior [ RunTime:0.000178s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000209s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: date ConfigAction.class.php 第 47 行.
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --START--
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Run LocationTemplate Behavior [ RunTime:0.000456s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ view_template ] --END-- [ RunTime:0.000516s ]
+[ 2013-09-07T08:00:08+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --START--
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: selectProductName 40ac92af4be817f27255ae7c27f29b27.php 第 79 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 83 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 84 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 85 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 87 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 88 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 89 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 90 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 91 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 92 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 94 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 95 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 96 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 97 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 98 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: Think 40ac92af4be817f27255ae7c27f29b27.php 第 99 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: date_value 40ac92af4be817f27255ae7c27f29b27.php 第 112 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined index: disabled 40ac92af4be817f27255ae7c27f29b27.php 第 142 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | NOTIC: [8] Undefined variable: pagination 40ac92af4be817f27255ae7c27f29b27.php 第 157 行.
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Run ParseTemplate Behavior [ RunTime:0.009195s ]
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009233s ]
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --START--
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Run ContentReplace Behavior [ RunTime:0.000101s ]
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Run TokenBuild Behavior [ RunTime:0.000090s ]
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Run ShowRuntime Behavior [ RunTime:0.000057s ]
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000344s ]
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --START--
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Run ShowPageTrace Behavior [ RunTime:0.000053s ]
+[ 2013-09-07T08:00:09+08:00 ] /Config/poplist | INFO: Tag[ view_end ] --END-- [ RunTime:0.000076s ]

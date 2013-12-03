@@ -1,0 +1,61 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+<script language="javascript" src="/Tpl/Public/js/apps.js" /></script>
+<style type="text/css">
+.controls_diy {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 18px;
+  *margin-left: 0;
+}
+</style>
+<div id="create_alert"></div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<form class="bs-docs-example form-horizontal" method='post'
+			enctype="multipart/form-data" name="name" id="form1"
+			ACTION="save">
+
+			<legend>用户信息</legend>
+			<input type="hidden" name="id" value="{$oemid['id']}"/>
+
+			<div class="control-group">
+				<label for="inputOem" class="control-label">Oemid</label>
+				<div class="controls">
+					<input type="text" placeholder="name" id="name" name="name" value="{$oemid['name']}" /> <span
+						class="help-inline error"><font color="#FF0000">*</font></span> 
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">说明</label>
+				<div class="controls">
+					<input type="text" placeholder="desc" id="desc" name="desc" value="{$oemid['desc']}" /> <span
+						class="help-inline error"><font color="#FF0000">*</font></span> 
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">所属用户</label>
+				<div class="controls">
+					<select id="user_id" name="user_id">
+						<option value="" >--请选择--</option>
+						<volist name="user" id="v" >
+						<option value="{$v['id']}" <if condition="$v['id'] eq $oemid['user_id']">selected</if> >{$v['name']}</option>
+						</volist>
+					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>
+			</div>
+			
+			
+			<div class="control-group">
+				<div class="controls">
+					<button class="btn btn-primary" type="submit">保存</button>
+					<a class="btn" href="index">取消</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<include file="Public:footer" />

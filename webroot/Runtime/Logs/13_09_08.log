@@ -1,0 +1,455 @@
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ route_check ] --START--
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run CheckRoute Behavior [ RunTime:0.000381s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.000439s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ app_begin ] --START--
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000247s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run CheckLang Behavior [ RunTime:0.001549s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001846s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ action_begin ] --START--
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined offset: 1 LoginBehavior.class.php 第 23 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run Login Behavior [ RunTime:0.000688s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000726s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined index: start StatAction.class.php 第 13 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined index: end StatAction.class.php 第 16 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step StatAction.class.php 第 19 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: time_step_field StatModel.class.php 第 62 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: time_step_group StatModel.class.php 第 66 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | SQL: SHOW COLUMNS FROM `pop_log` [ RunTime:0.000839s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | SQL: 
+		/*最后返回的数据是统计数据和弹窗的ID,标题,类型*/
+		select t.*,if(type='1' , s.title , c.title) title,
+				   if(type='1' , s.country , c.country) country,
+				   if(type='1' , s.start_time , c.start_time) start_time,
+				   if(type='1' , s.end_time , c.end_time) end_time
+		from (
+			/* 统计数据包括用户数,弹出次数,弹出成功次数,点击次数 */
+			select type,pop_id,count(distinct(client_id)) client_count,sum(action='pop') pop_count,
+			sum(action='success') success_count,sum(action='click') click_count  
+			/* 添加where条件 */
+			from pop_log where time between '2013-09-08 00:00:00' and '2013-09-08 23:59:59'
+			/* 按类型,弹窗ID,时间段,来给数据分组 */
+			 group by type,pop_id 
+		) t 
+		/* 先查出统计数据让记录条数变少,再联表查弹窗数据 */
+		left join std_pop s on t.pop_id=s.id
+		left join content_pop c on t.pop_id=c.id
+		/* 把标准弹窗显示在上面,内容弹窗在下面,然后按ID排序 */
+		order by type asc,pop_id asc; [ RunTime:0.000858s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | SQL: SHOW COLUMNS FROM `pop_log` [ RunTime:0.001015s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | SQL: select type,pop_id,count(distinct(client_id)) client_count,sum(action='pop') pop_count,
+			sum(action='success') success_count,sum(action='click') click_count from pop_log where time between '2013-09-08 00:00:00' and '2013-09-08 23:59:59'; [ RunTime:0.000340s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [2] Division by zero StatModel.class.php 第 39 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ view_template ] --START--
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run LocationTemplate Behavior [ RunTime:0.001539s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.001575s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ view_parse ] --START--
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: selectProductName 0e81eac836b05127e8d342e505a737f9.php 第 79 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 83 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 84 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 85 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 87 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 88 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 89 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 90 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 91 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 92 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 94 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 95 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 96 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 97 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 98 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 99 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step 0e81eac836b05127e8d342e505a737f9.php 第 116 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step 0e81eac836b05127e8d342e505a737f9.php 第 116 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step 0e81eac836b05127e8d342e505a737f9.php 第 116 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step 0e81eac836b05127e8d342e505a737f9.php 第 116 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: pagination 0e81eac836b05127e8d342e505a737f9.php 第 170 行.
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run ParseTemplate Behavior [ RunTime:0.066276s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.066311s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ view_filter ] --START--
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run ContentReplace Behavior [ RunTime:0.000388s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run TokenBuild Behavior [ RunTime:0.000337s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000267s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000286s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001375s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ view_end ] --START--
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000254s ]
+[ 2013-09-08T08:00:46+08:00 ] /Stat/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000280s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ route_check ] --START--
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run CheckRoute Behavior [ RunTime:0.000379s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.000448s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ app_begin ] --START--
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000245s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run CheckLang Behavior [ RunTime:0.001394s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001717s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ action_begin ] --START--
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined offset: 1 LoginBehavior.class.php 第 23 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run Login Behavior [ RunTime:0.000729s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000760s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined index: start StatAction.class.php 第 13 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined index: end StatAction.class.php 第 16 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step StatAction.class.php 第 19 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: time_step_field StatModel.class.php 第 62 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: time_step_group StatModel.class.php 第 66 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | SQL: SHOW COLUMNS FROM `pop_log` [ RunTime:0.000879s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | SQL: 
+		/*最后返回的数据是统计数据和弹窗的ID,标题,类型*/
+		select t.*,if(type='1' , s.title , c.title) title,
+				   if(type='1' , s.country , c.country) country,
+				   if(type='1' , s.start_time , c.start_time) start_time,
+				   if(type='1' , s.end_time , c.end_time) end_time
+		from (
+			/* 统计数据包括用户数,弹出次数,弹出成功次数,点击次数 */
+			select type,pop_id,count(distinct(client_id)) client_count,sum(action='pop') pop_count,
+			sum(action='success') success_count,sum(action='click') click_count  
+			/* 添加where条件 */
+			from pop_log where time between '2013-09-08 00:00:00' and '2013-09-08 23:59:59'
+			/* 按类型,弹窗ID,时间段,来给数据分组 */
+			 group by type,pop_id 
+		) t 
+		/* 先查出统计数据让记录条数变少,再联表查弹窗数据 */
+		left join std_pop s on t.pop_id=s.id
+		left join content_pop c on t.pop_id=c.id
+		/* 把标准弹窗显示在上面,内容弹窗在下面,然后按ID排序 */
+		order by type asc,pop_id asc; [ RunTime:0.000605s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | SQL: SHOW COLUMNS FROM `pop_log` [ RunTime:0.000633s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | SQL: select type,pop_id,count(distinct(client_id)) client_count,sum(action='pop') pop_count,
+			sum(action='success') success_count,sum(action='click') click_count from pop_log where time between '2013-09-08 00:00:00' and '2013-09-08 23:59:59'; [ RunTime:0.000237s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [2] Division by zero StatModel.class.php 第 39 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ view_template ] --START--
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run LocationTemplate Behavior [ RunTime:0.001101s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.001141s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ view_parse ] --START--
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: selectProductName 0e81eac836b05127e8d342e505a737f9.php 第 79 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 83 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 84 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 85 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 87 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 88 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 89 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 90 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 91 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 92 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 94 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 95 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 96 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 97 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 98 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 99 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step 0e81eac836b05127e8d342e505a737f9.php 第 116 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step 0e81eac836b05127e8d342e505a737f9.php 第 116 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step 0e81eac836b05127e8d342e505a737f9.php 第 116 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined index: time_step 0e81eac836b05127e8d342e505a737f9.php 第 116 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | NOTIC: [8] Undefined variable: pagination 0e81eac836b05127e8d342e505a737f9.php 第 170 行.
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run ParseTemplate Behavior [ RunTime:0.011924s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011967s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ view_filter ] --START--
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run ContentReplace Behavior [ RunTime:0.000451s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run TokenBuild Behavior [ RunTime:0.000331s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000235s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000250s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001382s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ view_end ] --START--
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000255s ]
+[ 2013-09-08T08:00:49+08:00 ] /Stat/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000286s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ route_check ] --START--
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run CheckRoute Behavior [ RunTime:0.000560s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ route_check ] --END-- [ RunTime:0.000655s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ app_begin ] --START--
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000291s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run CheckLang Behavior [ RunTime:0.003392s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003772s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ action_begin ] --START--
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined offset: 1 LoginBehavior.class.php 第 23 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run Login Behavior [ RunTime:0.001844s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001900s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: time_step_field StatModel.class.php 第 62 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: time_step_group StatModel.class.php 第 66 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | SQL: SHOW COLUMNS FROM `pop_log` [ RunTime:0.001177s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | SQL: 
+		/*最后返回的数据是统计数据和弹窗的ID,标题,类型*/
+		select t.*,if(type='1' , s.title , c.title) title,
+				   if(type='1' , s.country , c.country) country,
+				   if(type='1' , s.start_time , c.start_time) start_time,
+				   if(type='1' , s.end_time , c.end_time) end_time
+		from (
+			/* 统计数据包括用户数,弹出次数,弹出成功次数,点击次数 */
+			select type,pop_id,count(distinct(client_id)) client_count,sum(action='pop') pop_count,
+			sum(action='success') success_count,sum(action='click') click_count  
+			/* 添加where条件 */
+			from pop_log where time between '2013-09-04 00:00:00' and '2013-09-08 23:59:59'
+			/* 按类型,弹窗ID,时间段,来给数据分组 */
+			 group by type,pop_id 
+		) t 
+		/* 先查出统计数据让记录条数变少,再联表查弹窗数据 */
+		left join std_pop s on t.pop_id=s.id
+		left join content_pop c on t.pop_id=c.id
+		/* 把标准弹窗显示在上面,内容弹窗在下面,然后按ID排序 */
+		order by type asc,pop_id asc; [ RunTime:0.002910s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | SQL: SHOW COLUMNS FROM `pop_log` [ RunTime:0.001426s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | SQL: select type,pop_id,count(distinct(client_id)) client_count,sum(action='pop') pop_count,
+			sum(action='success') success_count,sum(action='click') click_count from pop_log where time between '2013-09-04 00:00:00' and '2013-09-08 23:59:59'; [ RunTime:0.000964s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ view_template ] --START--
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run LocationTemplate Behavior [ RunTime:0.001898s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ view_template ] --END-- [ RunTime:0.002017s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ view_parse ] --START--
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: selectProductName 0e81eac836b05127e8d342e505a737f9.php 第 79 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 83 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 84 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 85 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 87 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 88 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 89 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 90 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 91 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 92 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 94 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 95 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 96 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 97 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 98 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 99 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | NOTIC: [8] Undefined variable: pagination 0e81eac836b05127e8d342e505a737f9.php 第 170 行.
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run ParseTemplate Behavior [ RunTime:0.012599s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012643s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ view_filter ] --START--
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run ContentReplace Behavior [ RunTime:0.000343s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run TokenBuild Behavior [ RunTime:0.000293s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000199s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run ShowRuntime Behavior [ RunTime:0.000215s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001138s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ view_end ] --START--
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Run ShowPageTrace Behavior [ RunTime:0.000188s ]
+[ 2013-09-08T08:00:54+08:00 ] /Stat/?start=2013-09-04+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=c88b6044a91c526e22dc562a17ba8ac4_1833281043a6c13f63070e931aefb068 | INFO: Tag[ view_end ] --END-- [ RunTime:0.000215s ]
+[ 2013-09-08T08:01:00+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ route_check ] --START--
+[ 2013-09-08T08:01:00+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run CheckRoute Behavior [ RunTime:0.000691s ]
+[ 2013-09-08T08:01:00+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ route_check ] --END-- [ RunTime:0.000796s ]
+[ 2013-09-08T08:01:00+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ app_begin ] --START--
+[ 2013-09-08T08:01:00+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run CheckLang Behavior [ RunTime:0.002773s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003176s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ action_begin ] --START--
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined offset: 1 LoginBehavior.class.php 第 23 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run Login Behavior [ RunTime:0.001133s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001176s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: time_step_field StatModel.class.php 第 62 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: time_step_group StatModel.class.php 第 66 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | SQL: SHOW COLUMNS FROM `pop_log` [ RunTime:0.000872s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | SQL: 
+		/*最后返回的数据是统计数据和弹窗的ID,标题,类型*/
+		select t.*,if(type='1' , s.title , c.title) title,
+				   if(type='1' , s.country , c.country) country,
+				   if(type='1' , s.start_time , c.start_time) start_time,
+				   if(type='1' , s.end_time , c.end_time) end_time
+		from (
+			/* 统计数据包括用户数,弹出次数,弹出成功次数,点击次数 */
+			select type,pop_id,count(distinct(client_id)) client_count,sum(action='pop') pop_count,
+			sum(action='success') success_count,sum(action='click') click_count  
+			/* 添加where条件 */
+			from pop_log where time between '2013-09-01 00:00:00' and '2013-09-08 23:59:59'
+			/* 按类型,弹窗ID,时间段,来给数据分组 */
+			 group by type,pop_id 
+		) t 
+		/* 先查出统计数据让记录条数变少,再联表查弹窗数据 */
+		left join std_pop s on t.pop_id=s.id
+		left join content_pop c on t.pop_id=c.id
+		/* 把标准弹窗显示在上面,内容弹窗在下面,然后按ID排序 */
+		order by type asc,pop_id asc; [ RunTime:0.000847s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [2] Division by zero StatModel.class.php 第 85 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | SQL: SHOW COLUMNS FROM `pop_log` [ RunTime:0.000673s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | SQL: select type,pop_id,count(distinct(client_id)) client_count,sum(action='pop') pop_count,
+			sum(action='success') success_count,sum(action='click') click_count from pop_log where time between '2013-09-01 00:00:00' and '2013-09-08 23:59:59'; [ RunTime:0.000298s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ view_template ] --START--
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run LocationTemplate Behavior [ RunTime:0.000875s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ view_template ] --END-- [ RunTime:0.000908s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ view_parse ] --START--
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: selectProductName 0e81eac836b05127e8d342e505a737f9.php 第 79 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 83 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 84 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 85 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 87 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 88 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 89 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 90 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 91 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 92 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 94 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 95 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 96 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 97 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 98 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: Think 0e81eac836b05127e8d342e505a737f9.php 第 99 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | NOTIC: [8] Undefined variable: pagination 0e81eac836b05127e8d342e505a737f9.php 第 170 行.
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run ParseTemplate Behavior [ RunTime:0.011631s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011666s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ view_filter ] --START--
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run ContentReplace Behavior [ RunTime:0.000349s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run TokenBuild Behavior [ RunTime:0.000271s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000183s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run ShowRuntime Behavior [ RunTime:0.000219s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001100s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ view_end ] --START--
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Run ShowPageTrace Behavior [ RunTime:0.000188s ]
+[ 2013-09-08T08:01:01+08:00 ] /Stat/?start=2013-09-01+00%3A00%3A00&end=2013-09-08+23%3A59%3A59&time_step=&__hash__=0adc3bca17f12333ef07bdc6a8bbdb93_f67d8b91234b76e50c3bd5a4d4dbe52d | INFO: Tag[ view_end ] --END-- [ RunTime:0.000215s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run CheckRoute Behavior [ RunTime:0.000476s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000538s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000239s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run CheckLang Behavior [ RunTime:0.001380s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001663s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run Login Behavior [ RunTime:0.000859s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000896s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | SQL: SHOW COLUMNS FROM `std_pop` [ RunTime:0.001170s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | SQL: SELECT COUNT(*) AS tp_count FROM `std_pop` LIMIT 1   [ RunTime:0.000205s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | SQL: SELECT * FROM `std_pop` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000304s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000549s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000579s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: selectProductName c0b8c0fc882b778550dabbc9dfd1d849.php 第 79 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 83 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 84 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 85 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 87 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 88 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 89 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 90 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 91 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 92 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 94 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 95 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 96 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 97 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 98 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 99 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: disabled c0b8c0fc882b778550dabbc9dfd1d849.php 第 138 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 149 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 151 行.
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run ParseTemplate Behavior [ RunTime:0.023155s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.023191s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run ContentReplace Behavior [ RunTime:0.000890s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run TokenBuild Behavior [ RunTime:0.001944s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000250s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000311s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003497s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000388s ]
+[ 2013-09-08T08:01:06+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000432s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ route_check ] --START--
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run CheckRoute Behavior [ RunTime:0.000275s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ route_check ] --END-- [ RunTime:0.000324s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ app_begin ] --START--
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000187s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run CheckLang Behavior [ RunTime:0.001153s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001387s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ action_begin ] --START--
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run Login Behavior [ RunTime:0.000704s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000738s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | SQL: SHOW COLUMNS FROM `std_pop` [ RunTime:0.001089s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | SQL: SELECT * FROM `std_pop` WHERE id=61 LIMIT 1   [ RunTime:0.000360s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | SQL: SHOW COLUMNS FROM `country` [ RunTime:0.000721s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | SQL: SELECT * FROM `country` ORDER BY index_no asc  [ RunTime:0.000949s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | SQL: SHOW COLUMNS FROM `lang` [ RunTime:0.000766s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | SQL: SELECT * FROM `lang`  [ RunTime:0.000206s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000433s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | SQL: SELECT * FROM `oemid`  [ RunTime:0.000184s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ view_template ] --START--
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run LocationTemplate Behavior [ RunTime:0.000798s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ view_template ] --END-- [ RunTime:0.000840s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ view_parse ] --START--
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: selectProductName 8e5957235f312be47ff303b1068a74cb.php 第 79 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 83 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 84 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 85 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 87 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 88 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 89 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 90 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 91 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 92 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 94 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 95 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 96 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 97 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 98 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: Think 8e5957235f312be47ff303b1068a74cb.php 第 99 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined index: disabled 8e5957235f312be47ff303b1068a74cb.php 第 126 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined index: disabled 8e5957235f312be47ff303b1068a74cb.php 第 126 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined index: oemid 8e5957235f312be47ff303b1068a74cb.php 第 136 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined index: oemid 8e5957235f312be47ff303b1068a74cb.php 第 136 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined index: oemid 8e5957235f312be47ff303b1068a74cb.php 第 136 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined index: oemid 8e5957235f312be47ff303b1068a74cb.php 第 136 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined index: oemid 8e5957235f312be47ff303b1068a74cb.php 第 136 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | NOTIC: [8] Undefined variable: locales 8e5957235f312be47ff303b1068a74cb.php 第 162 行.
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run ParseTemplate Behavior [ RunTime:0.013625s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013676s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ view_filter ] --START--
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run ContentReplace Behavior [ RunTime:0.000345s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run TokenBuild Behavior [ RunTime:0.000296s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000164s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run ShowRuntime Behavior [ RunTime:0.000180s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001060s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ view_end ] --START--
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Run ShowPageTrace Behavior [ RunTime:0.000398s ]
+[ 2013-09-08T08:01:08+08:00 ] /StdPop/edit?id=61&locale= | INFO: Tag[ view_end ] --END-- [ RunTime:0.000426s ]

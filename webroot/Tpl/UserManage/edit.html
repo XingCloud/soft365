@@ -1,0 +1,83 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+<script language="javascript" src="/Tpl/Public/js/apps.js" /></script>
+<style type="text/css">
+.controls_diy {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 18px;
+  *margin-left: 0;
+}
+</style>
+<div id="create_alert"></div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<form class="bs-docs-example form-horizontal" method='post'
+			enctype="multipart/form-data" name="name" id="form1"
+			ACTION="/UserManage/save">
+
+			<legend>用户信息</legend>
+			<input type="hidden" name="id" value="{$user['id']}"/>
+			<div class="control-group">
+				<label for="inputOem" class="control-label">用户状态</label>
+				<div class="controls">
+					<select id="status" name="status">
+						<volist name="status" id="v" >
+						<option value="{$key}" <if condition="$key eq $user['status']">selected</if> >{$v}</option>
+						</volist>
+					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">用户名</label>
+				<div class="controls">
+					<input type="text" placeholder="name" id="name" name="name" value="{$user['name']}" /> <span
+						class="help-inline error"><font color="#FF0000">*</font></span> 
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">用户说明</label>
+				<div class="controls">
+					<input type="text" placeholder="desc" id="desc" name="desc" value="{$user['desc']}" /> <span
+						class="help-inline error"><font color="#FF0000">*</font></span> 
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">密码</label>
+				<div class="controls">
+					<input type="text" placeholder="password" id="password" name="password" value=""  /> 
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">email</label>
+				<div class="controls">
+					<input type="text" placeholder="email" id="email" name="email" value="{$user['email']}"  /> <span
+						class="help-inline error"><font color="#FF0000">*</font></span> 
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">权限</label>
+				<div class="controls">
+					<volist name="privilege" id='v'>
+					<input <if condition="in_array($key,$user['privilege'])">checked='checked'</if> type="checkbox" id="{$key}" name="privilege[]" value="{$key}" style="width:25px;"  />&nbsp;<label style="display:inline;" for='{$key}'>{$v}</label>&nbsp;&nbsp;&nbsp;
+					</volist> 
+				</div>
+			</div>
+			
+			
+			<div class="control-group">
+				<div class="controls">
+					<button class="btn btn-primary" type="submit">保存</button>
+					<a class="btn" href="/UserManage/index">取消</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<include file="Public:footer" />

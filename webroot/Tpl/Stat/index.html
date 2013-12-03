@@ -1,0 +1,83 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+
+<div id="content" align="center" class="container">
+<div id="create_alert"></div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="row-fluid">
+				<div align='left'><legend>弹窗统计数据</legend></div>
+				<form id='search_form'><span style="float:left">
+					<input  data-format="dd/MM/yyyy hh:mm:ss" type="text" placeholder="请选择开始日期" id="start" name="start" class='datetimepicker' value='{$get.start}' /> 至 
+					<input  data-format="dd/MM/yyyy hh:mm:ss" type="text" placeholder="请选择结束日期" id="end" name="end" class='datetimepicker' value='{$get.end}' />
+					<select id="time_step" name="time_step">
+						<option value="">--按时间段显示结果--</option>
+						<volist name="time_step" id="v" >
+						<option value="{$key}" <if condition="$key eq $get['time_step']">selected</if> >{$v}</option>
+						</volist>
+					</select>
+					<a class='btn'
+						style="margin-top: 10px; margin-bottom: 10px" onclick="$('#search_form').submit()" href="#"><i
+						class="icon"></i>查看</a>
+				</span>
+				</form>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>类型</th>
+							<th>ID</th>
+							<th>标题</th>
+							<th>国家</th>
+							<th>用户数</th>
+							<th>弹窗数</th>
+							<th>弹窗成功数</th>
+							<th>点击次数</th>
+							<th>CTR</th>
+							<th>时间段</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<volist name="data" id="pop">
+						<tr>
+							<td>{$pop['type']}</td>
+							<td>{$pop['pop_id']}</td>
+							<td>{$pop["title"]}</td>
+							<td>{$pop["country"]}</td>
+							<td>{$pop["client_count"]}</td>
+							<td>{$pop["pop_count"]}</td>
+							<td>{$pop["success_count"]}</td>
+							<td>{$pop["click_count"]}</td>
+							<td>{$pop["ctr"]}</td>
+							<if condition="$_GET['time_step']" >
+								<td>{$pop["start_time"]}至{$pop["end_time"]}</td>
+							<else />
+								<td>每天 &nbsp;{$pop['pop_start_time']}至{$pop['pop_end_time']}</td>
+							</if>
+							
+						</tr>
+						</volist>
+						<!-- <tr>
+							<td>总计</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>{$total["client_count"]}</td>
+							<td>{$total["pop_count"]}</td>
+							<td>{$total["success_count"]}</td>
+							<td>{$total["click_count"]}</td>
+							<td>{$total["ctr"]}</td>
+							<td>{$get["start"]}至{$get["end"]}</td>
+							
+						</tr> -->
+					</tbody>
+				</table>
+				<div class="pagination">{$pagination}</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+<include file="Public:footer" />

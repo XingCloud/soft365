@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'title', 2 => 'url', 3 => 'country', 4 => 'lang', 5 => 'start_date', 6 => 'end_date', 7 => 'description', 8 => 'weight', 9 => 'max_times', 10 => 'add_time', 11 => 'up_time', 12 => 'width', 13 => 'height', 14 => 'live_time', 15 => 'start_time', 16 => 'end_time', 17 => 'counrty', 18 => 'max_people', '_autoinc' => true, '_pk' => 'id', ); ?>

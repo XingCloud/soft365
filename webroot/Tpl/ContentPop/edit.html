@@ -1,0 +1,219 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+<script language="javascript" src="/Tpl/Public/js/apps.js" /></script>
+<style type="text/css">
+.controls_diy {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 18px;
+  *margin-left: 0;
+}
+</style>
+<div id="create_alert"></div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<form class="bs-docs-example form-horizontal" method='post'
+			enctype="multipart/form-data" name="name" id="form1"
+			ACTION="/ContentPop/save">
+
+			<legend>内容弹窗信息</legend>
+			<input type="hidden" name="id" value="{$pop['id']}"/>
+			<div class="control-group">
+				<label for="inputOem" class="control-label">是否停用</label>
+				<div class="controls">
+					<select id="disabled" name="disabled">
+						<volist name="disabled" id="v" >
+						<option value="{$key}" <if condition="$key eq $pop['disabled']">selected</if> >{$v}</option>
+						</volist>
+					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">指定oemid</label>
+				<div class="controls">
+					<select id="oemid" name="oemid">
+						<option value="">不限</option>
+						<volist name="oemids" id="v" >
+						<option value="{$v['name']}" <if condition="$v['name'] eq $pop['oemid']">selected</if> >{$v['name']}</option>
+						</volist>
+					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">内容弹窗分类</label>
+				<div class="controls">
+					<select id="sub_type" name="sub_type">
+						<option value="">--请选择--</option>
+						<volist name="sub_type" id="v" key="k">
+						<option value="{$k}" <if condition="$pop['sub_type'] eq $k">selected</if> >{$v}</option>
+						</volist>
+					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">标题</label>
+				<div class="controls">
+					<input type="text" placeholder="title" id="title" name="title" value="{$pop['title']}" /> <span
+						class="help-inline error"><font color="#FF0000">*</font></span> 
+				</div>
+			</div>
+			<div class="control-group">
+				<label for="inputOem" class="control-label">内容</label>
+				<div class="controls">
+					<textarea placeholder="text" rows="6" cols="150" id="text" name="text" />{$pop['text']}</textarea><span
+						class="help-inline error"><font color="#FF0000">*</font></span> 
+				</div>
+			</div>
+			<div class="control-group">
+				<label for="inputOem" class="control-label">激活应用类型</label>
+				<div class="controls">
+					<select id="app_type" name="app_type">
+						<option value="">--请选择--</option>
+						<volist name="app_type" id="v" key="k">
+						<option value="{$k}" <if condition="$pop['app_type'] eq $k">selected</if> >{$v}</option>
+						</volist>
+					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>
+			</div>
+			<div class="control-group">
+					<label for="inputName" class="control-label">应用ID</label>
+				<div class="controls">
+					<input type="text" placeholder="app_id" id="app_id" name="app_id" value="{$pop['app_id']}"  />
+					<span class="help-inline error"><font color="#FF0000">*</font><span><i
+						class="icon-warning-sign"></i>应用ID只能为数字。</span></span>
+				</div>	
+			</div>
+			
+			<div class="control-group">
+					<label for="inputName" class="control-label">应用名称</label>
+				<div class="controls">
+					<input type="text" placeholder="app_name" id="app_name" name="app_name" value="{$pop['app_name']}"  />
+					<span class="help-inline error"><font color="#FF0000">*</font> 
+				</div>	
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">停留时长(秒)</label>
+				<div class="controls">
+					<input type="text" placeholder="live_time" id="live_time" name="live_time" value="{$pop['live_time']}"  /> <span
+						class="help-inline error"><font color="#FF0000">*</font></span> <span><i
+						class="icon-warning-sign"></i>只能为数字。</span>
+				</div>
+			</div>
+			
+			
+			<!-- 语言选择 -->
+			<!-- <div class="control-group">
+				<label for="inputOem" class="control-label">地区</label>
+				<div class="controls">
+					<select id="locale" name="locale">
+						<volist name="locales" id="nation">
+							<option value="{$nation}">{:L($nation)}</option>
+						</volist>
+					</select>
+				</div>
+			</div >-->
+			<div class="control-group">
+					<label for="inputName" class="control-label">生效开始日期</label>
+				<div class="controls">
+					<input type="text" placeholder="start_date" id="start_date" name="start_date" class='datepicker' value="{$pop['start_date']}"  />
+					<span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>	
+			</div>
+			
+			<div class="control-group">
+					<label for="inputName" class="control-label">生效结束日期</label>
+				<div class="controls">
+					<input type="text" placeholder="end_date" id="end_date" name="end_date"  class='datepicker' value="{$pop['end_date']}"  />
+					<span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>	
+			</div>
+			
+			<div class="control-group">
+					<label for="inputName" class="control-label">生效开始时间</label>
+				<div class="controls">
+					<input type="text" placeholder="start_time" id="start_time" name="start_time"  class='timepicker' value="{$pop['start_time']}"  />
+					<span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>	
+			</div>
+			
+			<div class="control-group">
+					<label for="inputName" class="control-label">生效结束时间</label>
+				<div class="controls">
+					<input type="text" placeholder="end_time" id="end_time" name="end_time"  class='timepicker' value="{$pop['end_time']}"  />
+					<span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>	
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">每日弹出次数</label>
+				<div class="controls">
+					<input type="text" placeholder="max_times" id="max_times" name="max_times" value="{$pop['max_times']}"  /> <span
+						class="help-inline error"><font color="#FF0000">*</font></span> <span><i
+						class="icon-warning-sign"></i>只能为数字。</span>
+				</div>
+			</div>
+			
+			<div class="control-group">
+					<label for="inputName" class="control-label">权重</label>
+				<div class="controls">
+					<input type="text" placeholder="weight" id="weight" name="weight" value="{$pop['weight']}"  />
+					<span class="help-inline error"><font color="#FF0000">*</font><span><i
+						class="icon-warning-sign"></i>权重只能为数字，数值越大权重越高。</span></span>
+				</div>	
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">指定语言</label>
+				<div class="controls">
+					<select id="lang" name="lang">
+						<option value="">不限</option>
+						<volist name="langs" id="v" >
+						<option value="{$v['name']}" <if condition="$v['name'] eq $pop['lang']">selected</if> >{$v['name']}</option>
+						</volist>
+					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label for="inputOem" class="control-label">指定国家</label>
+				<div class="controls">
+					<select id="country" name="country">
+						<option value="">全部</option>
+						<volist name="countrys" id="v" >
+						<option value="{$v['name']}" <if condition="$v['name'] eq $pop['country']">selected</if> >{$v['name']}</option>
+						</volist>
+					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+				</div>
+			</div>
+			
+			<div class="control-group">
+					<label for="inputName" class="control-label">指定人数</label>
+				<div class="controls">
+					<input type="text" placeholder="max_people" id="max_people" name="max_people" value="{$pop['max_people']}"  />
+					<span class="help-inline error"><font color="#FF0000">*</font><span><i
+						class="icon-warning-sign"></i>指定人数只能为数字。</span></span>
+				</div>	
+			</div>
+			
+			<div class="control-group">
+					<label for="inputDesc" class="control-label">描述</label>
+				<div class="controls">
+					<textarea placeholder="Desc" rows="6" cols="150" id="Description" name="description" />{$pop['description']}</textarea>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<div class="controls">
+					<button class="btn btn-primary" type="submit">保存</button>
+					<a class="btn" href="/ContentPop/index">取消</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<include file="Public:footer" />

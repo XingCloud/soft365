@@ -1,0 +1,1148 @@
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run CheckRoute Behavior [ RunTime:0.000411s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000463s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000249s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run CheckLang Behavior [ RunTime:0.001874s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002196s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run Login Behavior [ RunTime:0.000992s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001023s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000610s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.000252s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | SQL: SELECT * FROM `user` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000169s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000428s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | SQL: SELECT * FROM `oemid`  [ RunTime:0.000167s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000956s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000990s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: selectProductName c52881e8e0eb5f2f3b18504de7b757ee.php 第 79 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 83 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 84 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 85 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 87 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 88 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 89 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 90 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 91 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 92 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 93 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 95 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 96 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 97 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 98 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 99 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 100 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run ParseTemplate Behavior [ RunTime:0.011569s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011601s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run ContentReplace Behavior [ RunTime:0.000324s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run TokenBuild Behavior [ RunTime:0.000368s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000265s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000319s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001366s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000272s ]
+[ 2013-09-17T15:22:05+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000298s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run CheckRoute Behavior [ RunTime:0.000425s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000473s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000252s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run CheckLang Behavior [ RunTime:0.001539s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001839s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run Login Behavior [ RunTime:0.000868s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000899s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000588s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.000211s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | SQL: SELECT * FROM `user` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000192s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000410s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | SQL: SELECT * FROM `oemid`  [ RunTime:0.000183s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000940s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000976s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: selectProductName c52881e8e0eb5f2f3b18504de7b757ee.php 第 79 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 83 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 84 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 85 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 87 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 88 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 89 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 90 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 91 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 92 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 93 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 95 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 96 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 97 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 98 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 99 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 100 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run ParseTemplate Behavior [ RunTime:0.012433s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012466s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run ContentReplace Behavior [ RunTime:0.001453s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run TokenBuild Behavior [ RunTime:0.000886s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.002071s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run ShowRuntime Behavior [ RunTime:0.001918s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.006444s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000892s ]
+[ 2013-09-17T15:22:07+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000923s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run CheckRoute Behavior [ RunTime:0.000080s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000158s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000077s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run CheckLang Behavior [ RunTime:0.000884s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001048s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run Login Behavior [ RunTime:0.000211s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000274s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | SQL: SHOW COLUMNS FROM `std_pop` [ RunTime:0.001464s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | SQL: SELECT COUNT(*) AS tp_count FROM `std_pop` LIMIT 1   [ RunTime:0.000410s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | SQL: SELECT * FROM `std_pop` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000586s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000879s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000940s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: selectProductName c0b8c0fc882b778550dabbc9dfd1d849.php 第 79 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 83 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 84 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 85 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 87 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 88 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 89 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 90 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 91 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 92 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 93 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 95 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 96 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 97 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 98 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 99 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 100 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run ParseTemplate Behavior [ RunTime:0.010580s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010619s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run ContentReplace Behavior [ RunTime:0.000130s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run TokenBuild Behavior [ RunTime:0.000104s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000024s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000061s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000377s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000035s ]
+[ 2013-09-17T15:22:07+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000059s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run CheckRoute Behavior [ RunTime:0.000458s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000507s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000265s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run CheckLang Behavior [ RunTime:0.001728s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002052s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run Login Behavior [ RunTime:0.000818s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000858s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000595s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.000183s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | SQL: SELECT * FROM `user` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000166s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000360s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | SQL: SELECT * FROM `oemid`  [ RunTime:0.000163s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000761s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000808s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: selectProductName c52881e8e0eb5f2f3b18504de7b757ee.php 第 79 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 83 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 84 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 85 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 87 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 88 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 89 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 90 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 91 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 92 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 93 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 95 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 96 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 97 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 98 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 99 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 100 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run ParseTemplate Behavior [ RunTime:0.009730s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009760s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run ContentReplace Behavior [ RunTime:0.000319s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run TokenBuild Behavior [ RunTime:0.000296s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000229s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000246s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001165s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000226s ]
+[ 2013-09-17T15:22:08+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000250s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run CheckRoute Behavior [ RunTime:0.000053s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000106s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000044s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run CheckLang Behavior [ RunTime:0.000523s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000617s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run Login Behavior [ RunTime:0.000129s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000163s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | SQL: SHOW COLUMNS FROM `country` [ RunTime:0.000574s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | SQL: SELECT * FROM `country`  [ RunTime:0.000332s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001474s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001527s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: selectProductName 175dc2ac28e4fb74c631ae2398061245.php 第 79 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 83 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 84 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 85 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 87 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 88 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 89 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 90 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 91 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 92 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 93 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 95 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 96 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 97 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 98 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 99 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 100 行.
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run ParseTemplate Behavior [ RunTime:0.010220s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010255s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run ContentReplace Behavior [ RunTime:0.000202s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run TokenBuild Behavior [ RunTime:0.000210s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000033s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000585s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-09-17T15:22:09+08:00 ] /Country/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000066s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run CheckRoute Behavior [ RunTime:0.000536s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000598s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run CheckLang Behavior [ RunTime:0.002033s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002389s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run Login Behavior [ RunTime:0.001041s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001078s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | SQL: SHOW COLUMNS FROM `std_pop` [ RunTime:0.000859s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | SQL: SHOW COLUMNS FROM `content_pop` [ RunTime:0.000798s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | SQL: SELECT COUNT(*) AS tp_count FROM `content_pop` LIMIT 1   [ RunTime:0.000229s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | SQL: SELECT * FROM `content_pop` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000235s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001658s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001703s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: selectProductName 44bbd92ce1e71be6774fca693eb62727.php 第 79 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 83 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 84 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 85 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 87 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 88 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 89 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 90 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 91 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 92 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 93 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 95 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 96 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 97 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 98 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 99 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 100 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run ParseTemplate Behavior [ RunTime:0.015487s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.015585s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run ContentReplace Behavior [ RunTime:0.000469s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run TokenBuild Behavior [ RunTime:0.000473s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000424s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000415s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001891s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.001309s ]
+[ 2013-09-17T15:22:10+08:00 ] /ContentPop/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.001364s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run CheckRoute Behavior [ RunTime:0.000461s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000538s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000260s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run CheckLang Behavior [ RunTime:0.001750s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002073s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run Login Behavior [ RunTime:0.000926s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000959s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | SQL: SHOW COLUMNS FROM `lang` [ RunTime:0.000468s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | SQL: SELECT * FROM `lang`  [ RunTime:0.000200s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001171s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001219s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: selectProductName 175dc2ac28e4fb74c631ae2398061245.php 第 79 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 83 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 84 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 85 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 87 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 88 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 89 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 90 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 91 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 92 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 93 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 95 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 96 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 97 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 98 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 99 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 100 行.
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run ParseTemplate Behavior [ RunTime:0.010282s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010311s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run ContentReplace Behavior [ RunTime:0.000306s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run TokenBuild Behavior [ RunTime:0.000317s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000245s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000295s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001241s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000252s ]
+[ 2013-09-17T15:22:11+08:00 ] /Lang/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000278s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run CheckRoute Behavior [ RunTime:0.000046s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000092s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000039s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run CheckLang Behavior [ RunTime:0.000440s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000525s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run Login Behavior [ RunTime:0.000110s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000137s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | SQL: SHOW COLUMNS FROM `country` [ RunTime:0.000620s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | SQL: SELECT * FROM `country`  [ RunTime:0.000304s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000089s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000115s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: selectProductName 175dc2ac28e4fb74c631ae2398061245.php 第 79 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 83 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 84 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 85 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 87 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 88 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 89 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 90 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 91 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 92 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 93 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 95 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 96 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 97 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 98 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 99 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 100 行.
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run ParseTemplate Behavior [ RunTime:0.009225s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009262s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run ContentReplace Behavior [ RunTime:0.000195s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run TokenBuild Behavior [ RunTime:0.000235s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000032s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000604s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000037s ]
+[ 2013-09-17T15:22:12+08:00 ] /Country/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000061s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run CheckRoute Behavior [ RunTime:0.000670s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000737s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000347s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run CheckLang Behavior [ RunTime:0.002817s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003233s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run Login Behavior [ RunTime:0.001387s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001435s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | SQL: SHOW COLUMNS FROM `std_pop` [ RunTime:0.001117s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | SQL: SHOW COLUMNS FROM `content_pop` [ RunTime:0.000944s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | SQL: SELECT COUNT(*) AS tp_count FROM `content_pop` LIMIT 1   [ RunTime:0.000299s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | SQL: SELECT * FROM `content_pop` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000355s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001356s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001401s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: selectProductName 44bbd92ce1e71be6774fca693eb62727.php 第 79 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 83 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 84 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 85 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 87 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 88 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 89 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 90 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 91 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 92 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 93 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 95 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 96 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 97 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 98 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 99 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined variable: Think 44bbd92ce1e71be6774fca693eb62727.php 第 100 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 155 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | NOTIC: [8] Undefined index: locale 44bbd92ce1e71be6774fca693eb62727.php 第 157 行.
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run ParseTemplate Behavior [ RunTime:0.016171s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016212s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run ContentReplace Behavior [ RunTime:0.000497s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run TokenBuild Behavior [ RunTime:0.000412s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000331s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000390s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001738s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000764s ]
+[ 2013-09-17T15:22:12+08:00 ] /ContentPop/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000807s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run CheckRoute Behavior [ RunTime:0.000056s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000135s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000053s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run CheckLang Behavior [ RunTime:0.000502s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000613s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run Login Behavior [ RunTime:0.000139s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000176s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | SQL: SHOW COLUMNS FROM `std_pop` [ RunTime:0.000997s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | SQL: SELECT COUNT(*) AS tp_count FROM `std_pop` LIMIT 1   [ RunTime:0.000215s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | SQL: SELECT * FROM `std_pop` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000318s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000622s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000661s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: selectProductName c0b8c0fc882b778550dabbc9dfd1d849.php 第 79 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 83 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 84 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 85 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 87 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 88 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 89 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 90 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 91 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 92 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 93 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 95 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 96 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 97 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 98 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 99 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 100 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run ParseTemplate Behavior [ RunTime:0.012302s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012337s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run ContentReplace Behavior [ RunTime:0.000171s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run TokenBuild Behavior [ RunTime:0.000134s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000082s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000524s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000043s ]
+[ 2013-09-17T15:22:13+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000073s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run CheckRoute Behavior [ RunTime:0.000791s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000869s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000233s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run CheckLang Behavior [ RunTime:0.001688s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001968s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run Login Behavior [ RunTime:0.000868s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000899s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | SQL: SHOW COLUMNS FROM `lang` [ RunTime:0.000410s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | SQL: SELECT * FROM `lang`  [ RunTime:0.000170s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000997s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001043s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: selectProductName 175dc2ac28e4fb74c631ae2398061245.php 第 79 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 83 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 84 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 85 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 87 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 88 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 89 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 90 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 91 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 92 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 93 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 95 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 96 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 97 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 98 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 99 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | NOTIC: [8] Undefined variable: Think 175dc2ac28e4fb74c631ae2398061245.php 第 100 行.
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run ParseTemplate Behavior [ RunTime:0.008937s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008965s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run ContentReplace Behavior [ RunTime:0.000278s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run TokenBuild Behavior [ RunTime:0.000284s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000217s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000247s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001096s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000226s ]
+[ 2013-09-17T15:22:14+08:00 ] /Lang/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000250s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run CheckRoute Behavior [ RunTime:0.000085s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000165s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000080s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run CheckLang Behavior [ RunTime:0.000736s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000947s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run Login Behavior [ RunTime:0.000227s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000288s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000509s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | SQL: SELECT COUNT(*) AS tp_count FROM `oemid` LIMIT 1   [ RunTime:0.000221s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | SQL: SELECT * FROM `oemid` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000187s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000524s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | SQL: SELECT * FROM `user`  [ RunTime:0.000173s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined offset: 0 OemidAction.class.php 第 31 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000723s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000758s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: selectProductName 3f59d7f45a5888a1611a9d5520995bb1.php 第 79 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 83 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 84 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 85 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 87 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 88 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 89 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 90 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 91 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 92 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 93 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 95 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 96 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 97 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 98 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 99 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | NOTIC: [8] Undefined variable: Think 3f59d7f45a5888a1611a9d5520995bb1.php 第 100 行.
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run ParseTemplate Behavior [ RunTime:0.009044s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009074s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run ContentReplace Behavior [ RunTime:0.000101s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run TokenBuild Behavior [ RunTime:0.000085s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000058s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000333s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-09-17T15:22:14+08:00 ] /Oemid/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000065s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run CheckRoute Behavior [ RunTime:0.000983s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ route_check ] --END-- [ RunTime:0.001068s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000545s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run CheckLang Behavior [ RunTime:0.003226s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003862s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run Login Behavior [ RunTime:0.001770s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001828s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run LocationTemplate Behavior [ RunTime:0.001380s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ view_template ] --END-- [ RunTime:0.001437s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: selectProductName 296ddc1ae3214b5338f7113dee2fdf66.php 第 79 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 83 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 84 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 85 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 87 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 88 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 89 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 90 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 91 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 92 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 93 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 93 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 95 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 95 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 96 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 97 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 98 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 99 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | NOTIC: [8] Undefined variable: Think 296ddc1ae3214b5338f7113dee2fdf66.php 第 100 行.
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run ParseTemplate Behavior [ RunTime:0.013301s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013337s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run ContentReplace Behavior [ RunTime:0.000411s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run TokenBuild Behavior [ RunTime:0.000401s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000302s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run ShowRuntime Behavior [ RunTime:0.000347s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001552s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Run ShowPageTrace Behavior [ RunTime:0.000310s ]
+[ 2013-09-17T15:22:15+08:00 ] /Config/edit | INFO: Tag[ view_end ] --END-- [ RunTime:0.000340s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run CheckRoute Behavior [ RunTime:0.000508s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000562s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000268s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run CheckLang Behavior [ RunTime:0.001897s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002217s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run Login Behavior [ RunTime:0.000910s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000965s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000704s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.000193s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | SQL: SELECT * FROM `user` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000203s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000425s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | SQL: SELECT * FROM `oemid`  [ RunTime:0.000190s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000817s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000863s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: selectProductName c52881e8e0eb5f2f3b18504de7b757ee.php 第 79 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 83 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 84 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 85 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 87 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 88 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 89 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 90 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 91 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 92 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 93 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 95 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 96 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 97 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 98 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 99 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 100 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run ParseTemplate Behavior [ RunTime:0.011840s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011871s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run ContentReplace Behavior [ RunTime:0.000366s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run TokenBuild Behavior [ RunTime:0.000352s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000274s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000339s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001435s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000316s ]
+[ 2013-09-17T15:22:16+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000344s ]
+[ 2013-09-17T18:43:16+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:43:16+08:00 ] /UserManage/index | INFO: Run CheckRoute Behavior [ RunTime:0.000576s ]
+[ 2013-09-17T18:43:16+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000635s ]
+[ 2013-09-17T18:43:16+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:43:16+08:00 ] /UserManage/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000301s ]
+[ 2013-09-17T18:43:16+08:00 ] /UserManage/index | INFO: Run CheckLang Behavior [ RunTime:0.002352s ]
+[ 2013-09-17T18:43:16+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002712s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run Login Behavior [ RunTime:0.001110s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001151s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000787s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.000251s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SELECT * FROM `user` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000230s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000496s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SELECT * FROM `oemid`  [ RunTime:0.000242s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001043s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001084s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: selectProductName c52881e8e0eb5f2f3b18504de7b757ee.php 第 79 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 83 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 84 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 85 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 87 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 88 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 89 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 90 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 91 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 92 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 93 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 95 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 96 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 97 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 98 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 99 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 100 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ParseTemplate Behavior [ RunTime:0.014394s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.014431s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ContentReplace Behavior [ RunTime:0.000364s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run TokenBuild Behavior [ RunTime:0.000353s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000284s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000326s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001422s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000312s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000342s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run CheckRoute Behavior [ RunTime:0.000059s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000144s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run CheckLang Behavior [ RunTime:0.000160s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000268s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run Login Behavior [ RunTime:0.000120s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000155s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000813s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.000231s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SELECT * FROM `user` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000204s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000496s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | SQL: SELECT * FROM `oemid`  [ RunTime:0.000204s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000058s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000093s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: selectProductName c52881e8e0eb5f2f3b18504de7b757ee.php 第 79 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 83 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 84 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 85 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 87 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 88 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 89 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 90 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 91 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 92 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 93 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 95 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 96 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 97 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 98 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 99 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 100 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ParseTemplate Behavior [ RunTime:0.012043s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012082s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ContentReplace Behavior [ RunTime:0.000131s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run TokenBuild Behavior [ RunTime:0.000101s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000035s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000074s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000422s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000051s ]
+[ 2013-09-17T18:43:17+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000079s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run CheckRoute Behavior [ RunTime:0.000536s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000597s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000316s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run CheckLang Behavior [ RunTime:0.002006s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002402s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run Login Behavior [ RunTime:0.001300s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001355s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000697s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.000258s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | SQL: SELECT * FROM `user` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000204s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000554s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | SQL: SELECT * FROM `oemid`  [ RunTime:0.000229s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000999s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001047s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: selectProductName c52881e8e0eb5f2f3b18504de7b757ee.php 第 79 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 83 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 84 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 85 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 87 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 88 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 89 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 90 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 91 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 92 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 93 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 95 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 96 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 97 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 98 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 99 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 100 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run ParseTemplate Behavior [ RunTime:0.013024s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013057s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run ContentReplace Behavior [ RunTime:0.000411s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run TokenBuild Behavior [ RunTime:0.000340s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000265s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000285s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001389s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000262s ]
+[ 2013-09-17T18:52:16+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000289s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run CheckRoute Behavior [ RunTime:0.000417s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000466s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000231s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run CheckLang Behavior [ RunTime:0.001607s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001900s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run Login Behavior [ RunTime:0.000883s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000912s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000575s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.000215s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | SQL: SELECT * FROM `user` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000162s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | SQL: SHOW COLUMNS FROM `oemid` [ RunTime:0.000392s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | SQL: SELECT * FROM `oemid`  [ RunTime:0.000159s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000851s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000880s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: selectProductName c52881e8e0eb5f2f3b18504de7b757ee.php 第 79 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 83 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 84 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 85 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 87 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 88 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 89 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 90 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 91 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 92 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 93 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 95 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 96 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 97 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 98 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 99 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined variable: Think c52881e8e0eb5f2f3b18504de7b757ee.php 第 100 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | NOTIC: [8] Undefined index: locale c52881e8e0eb5f2f3b18504de7b757ee.php 第 142 行.
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run ParseTemplate Behavior [ RunTime:0.010576s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010603s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run ContentReplace Behavior [ RunTime:0.000612s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run TokenBuild Behavior [ RunTime:0.001718s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.002044s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run ShowRuntime Behavior [ RunTime:0.001088s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.005542s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000877s ]
+[ 2013-09-17T18:53:07+08:00 ] /UserManage/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000916s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run CheckRoute Behavior [ RunTime:0.000860s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000944s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000464s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run CheckLang Behavior [ RunTime:0.003247s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003802s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run Login Behavior [ RunTime:0.001672s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001732s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | SQL: SHOW COLUMNS FROM `std_pop` [ RunTime:0.001563s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | SQL: SELECT COUNT(*) AS tp_count FROM `std_pop` LIMIT 1   [ RunTime:0.000381s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | SQL: SELECT * FROM `std_pop` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000525s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001677s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001742s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined offset: 1 ThinkTemplate.class.php 第 536 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: selectProductName c0b8c0fc882b778550dabbc9dfd1d849.php 第 79 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 83 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 84 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 85 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 87 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 88 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 89 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 90 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 91 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 92 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 93 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 95 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 96 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 97 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 98 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 99 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined variable: Think c0b8c0fc882b778550dabbc9dfd1d849.php 第 100 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 150 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | NOTIC: [8] Undefined index: locale c0b8c0fc882b778550dabbc9dfd1d849.php 第 152 行.
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run ParseTemplate Behavior [ RunTime:0.022553s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.022605s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run ContentReplace Behavior [ RunTime:0.000693s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run TokenBuild Behavior [ RunTime:0.000652s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000565s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000613s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002675s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000757s ]
+[ 2013-09-17T18:53:09+08:00 ] /StdPop/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000796s ]
+[ 2013-09-17T18:55:00+08:00 ] / | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:55:00+08:00 ] / | INFO: Run CheckRoute Behavior [ RunTime:0.000405s ]
+[ 2013-09-17T18:55:00+08:00 ] / | INFO: Tag[ route_check ] --END-- [ RunTime:0.000462s ]
+[ 2013-09-17T18:55:00+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:55:00+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000230s ]
+[ 2013-09-17T18:55:00+08:00 ] / | INFO: Run CheckLang Behavior [ RunTime:0.001636s ]
+[ 2013-09-17T18:55:00+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001913s ]
+[ 2013-09-17T18:55:00+08:00 ] / | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:55:00+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 22 行.
+[ 2013-09-17T18:55:00+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 23 行.
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run CheckRoute Behavior [ RunTime:0.000044s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000086s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000090s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run CheckLang Behavior [ RunTime:0.000454s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000609s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run Login Behavior [ RunTime:0.000092s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000123s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run LocationTemplate Behavior [ RunTime:0.000960s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ view_template ] --END-- [ RunTime:0.001014s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run ParseTemplate Behavior [ RunTime:0.007335s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007395s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run ContentReplace Behavior [ RunTime:0.000291s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run TokenBuild Behavior [ RunTime:0.000311s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000220s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run ShowRuntime Behavior [ RunTime:0.000246s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001142s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Run ShowPageTrace Behavior [ RunTime:0.000225s ]
+[ 2013-09-17T18:55:00+08:00 ] /User/login | INFO: Tag[ view_end ] --END-- [ RunTime:0.000249s ]
+[ 2013-09-17T18:55:04+08:00 ] /User/login | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:55:04+08:00 ] /User/login | INFO: Run CheckRoute Behavior [ RunTime:0.000417s ]
+[ 2013-09-17T18:55:04+08:00 ] /User/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000466s ]
+[ 2013-09-17T18:55:04+08:00 ] /User/login | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:55:04+08:00 ] /User/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000240s ]
+[ 2013-09-17T18:55:05+08:00 ] /User/login | INFO: Run CheckLang Behavior [ RunTime:0.001749s ]
+[ 2013-09-17T18:55:05+08:00 ] /User/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002074s ]
+[ 2013-09-17T18:55:05+08:00 ] /User/login | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:55:05+08:00 ] /User/login | INFO: Run Login Behavior [ RunTime:0.000963s ]
+[ 2013-09-17T18:55:05+08:00 ] /User/login | INFO: Tag[ action_begin ] --END-- [ RunTime:0.001005s ]
+[ 2013-09-17T18:55:05+08:00 ] /User/login | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000680s ]
+[ 2013-09-17T18:55:05+08:00 ] /User/login | SQL: SELECT * FROM `user` WHERE name='elex' and password='93725b9fc52918f65c42dd16492d7d98' LIMIT 1   [ RunTime:0.000310s ]
+[ 2013-09-17T18:55:05+08:00 ] /User/login | SQL: UPDATE `user` SET `name`='elex',`password`='93725b9fc52918f65c42dd16492d7d98',`email`='zhangpeng@elex-tech.com',`last_login`='2013-09-17 18:55:05',`is_elex`='1',`is_admin`='1',`status`='1',`privilege`='',`desc`='总管理员',`add_user_id`='0',`add_time`='0000-00-00 00:00:00' WHERE ( `id` = '1' ) [ RunTime:0.017712s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ route_check ] --START--
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run CheckRoute Behavior [ RunTime:0.000076s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ route_check ] --END-- [ RunTime:0.000125s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000040s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run CheckLang Behavior [ RunTime:0.000508s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000606s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ action_begin ] --START--
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 22 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined index: _URL_ LoginBehavior.class.php 第 23 行.
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run Login Behavior [ RunTime:0.000140s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ action_begin ] --END-- [ RunTime:0.000173s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000316s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000364s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: selectProductName 948b69b7e74262b0af4cc87e8ce85c98.php 第 79 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 83 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 84 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 85 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 87 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 88 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 89 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 90 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 91 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 92 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 93 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 95 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 96 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 97 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 98 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 99 行.
+[ 2013-09-17T18:55:05+08:00 ] / | NOTIC: [8] Undefined variable: Think 948b69b7e74262b0af4cc87e8ce85c98.php 第 100 行.
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.011422s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011453s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000365s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000340s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000283s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000298s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001384s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000259s ]
+[ 2013-09-17T18:55:05+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000285s ]

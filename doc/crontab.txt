@@ -1,0 +1,9 @@
+
+#别忘记给/var/www/pop.soft365.com/webroot/cli.php 添加执行权限
+#每分钟同步一次用户数据
+* * * * * /var/www/pop.soft365.com/webroot/cli.php Crontab saveClientToMysql >> /var/www/pop.soft365.com/log/saveClientToMysql.log &2>1
+#每天自动更新弹窗数据
+1 0 * * * /var/www/pop.soft365.com/webroot/cli.php Crontab refreshPop >> /var/www/pop.soft365.com/log/refreshPop.log &2>1
+
+#每分钟同步一次弹窗日志数据
+* * * * * /var/www/pop.soft365.com/webroot/cli.php Crontab savePopLogToMysql >> /var/www/pop.soft365.com/log/savePopLogToMysql.log &2>1

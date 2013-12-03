@@ -1,0 +1,41 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+<script language="javascript" src="/Tpl/Public/js/apps.js" /></script>
+<style type="text/css">
+.controls_diy {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 18px;
+  *margin-left: 0;
+}
+</style>
+<div id="create_alert"></div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<form class="bs-docs-example form-horizontal" method='post'
+			enctype="multipart/form-data" name="name" id="form1">
+
+			<legend>{$title}</legend>
+			<volist name="fields" id="v" >
+				<div class="control-group">
+					<label for="inputOem" class="control-label" style='width:250px;'>{$v}&nbsp;&nbsp;</label>
+					<div class="controls">
+						<input type="text" placeholder="{$key}" id="{$key}" name="{$key}" value="{$data[$key]}" /> <span
+							class="help-inline error"><font color="#FF0000">*</font></span> <span><i
+							class="icon-warning-sign"></i>{$v}只能为数字</span>
+					</div>
+				</div>
+			</volist>
+			
+			
+			<div class="control-group">
+				<div class="controls">
+					<button class="btn btn-primary" type="submit">保存</button>
+					<a class="btn" href="/Config/edit">取消</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<include file="Public:footer" />

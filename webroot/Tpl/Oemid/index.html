@@ -1,0 +1,51 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+
+<div id="content" align="center" class="container">
+<div id="create_alert"></div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="row-fluid">
+				<span style="float:left"><a class='btn btn-success'
+					style="margin-top: 10px; margin-bottom: 10px" href="/Oemid/add"><i
+					class="icon  icon-plus"></i>增加</a>
+					
+				</span>
+				
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Oemid</th>
+							<th>说明</th>
+							<th>所属用户</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<volist name="data" id="obj">
+						<tr>
+							<td>{$obj["id"]}</td>
+							<td>{$obj["name"]}</td>
+							<td>{$obj["desc"]}</td>
+							<td>{$obj["user"]}</td>
+							<td>
+							<a class="btn" href="/Oemid/edit?id={$obj['id']}"><i
+									class="icon  icon-edit"></i>编辑</a>
+							<a class="btn" href="/Oemid/destroy?id={$obj['id']}"
+								onclick="return confirm('确认要停用此用户吗?')"><i
+									class="icon  icon-trash"></i>删除</a>
+							</td>
+						</tr>
+						</volist>
+					</tbody>
+				</table>
+				<div class="pagination">{$pagination}</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+<include file="Public:footer" />
