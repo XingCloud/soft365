@@ -42,7 +42,12 @@ class StdPop extends Base {
 	
 	// 管理员ID
 	const user_id = 'user_id';
-	
+
+    // 是否强制弹窗（不基于用户标签）
+    const force = 'force';
+
+    // 广告类型标签
+	const tags = 'tags';
 	
 	// 增加弹出次数
 	static function addTimes($pop_id, $isFirstTime, &$popAddPeople) {

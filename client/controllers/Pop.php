@@ -70,17 +70,26 @@ class Pop extends \Yaf\Controller_Abstract {
 		if (empty ( $pop_id )) {
 			die ( '0_2 invaid notifyid' );
 		}
+
+        //更新redis里的client tags信息
+        $client_tags = $this->clientR->hget(\redis\Client::tags);
+        $pops = \redis\PopSortByWeight::get ();
+        foreach ($pops as $pop) {
+
+        }
+
+
 		// 记录日志
-		// redis日志
-		$log = array (
-				'time' => date ( 'Y-m-d H:i:s' ),
-				'client_id' => $this->clientR->client_id,
-				'type' => $_GET ['type'],
-				'pop_id' => $_GET ['notifyid'],
-				'action' => 'click' 
-		);
-		\redis\PopLog::rpush ( $log );
-		
+        // redis日志
+        $log = array (
+            'time' => date ( 'Y-m-d H:i:s' ),
+            'client_id' => $this->clientR->client_id,
+            'type' => $_GET ['type'],
+            'pop_id' => $_GET ['notifyid'],
+            'action' => 'click'
+        );
+        \redis\PopLog::rpush ( $log );
+
 		// 数据正常，记一个文本log
 		// $log = "时间,用户ID,弹窗类型,弹窗内容ID,是否增加过绑定关系\n";
 		$log = date ( 'Y-m-d H:i:s' ) . ",{$this->clientR->client_id},{$type},{$pop_id}\n";
@@ -115,17 +124,18 @@ class Pop extends \Yaf\Controller_Abstract {
 		
 		// 数据正常，记一个文本log
 		$hasBind = $popAddPeople ? '1' : '0';
-		// redis日志
-		$log = array (
-				'time' => date ( 'Y-m-d H:i:s' ),
-				'client_id' => $this->clientR->client_id,
-				'type' => $_GET ['type'],
-				'pop_id' => $_GET ['notifyid'],
-				'has_bind' => $hasBind,
-				'action' => 'success' 
-		);
-		\redis\PopLog::rpush ( $log );
-		
+
+        // redis日志
+        $log = array (
+            'time' => date ( 'Y-m-d H:i:s' ),
+            'client_id' => $this->clientR->client_id,
+            'type' => $_GET ['type'],
+            'pop_id' => $_GET ['notifyid'],
+            'has_bind' => $hasBind,
+            'action' => 'success'
+        );
+        \redis\PopLog::rpush ( $log );
+
 		// $log = "时间,用户ID,弹窗类型,弹窗内容ID,是否增加过绑定关系\n";
 		$log = date ( 'Y-m-d H:i:s' ) . ",{$this->clientR->client_id},{$type},{$pop_id},{$hasBind}\n";
 		file_put_contents ( '../log/success/' . date ( 'Y-m-d' ) . '.log', $log, FILE_APPEND );
@@ -154,16 +164,16 @@ class Pop extends \Yaf\Controller_Abstract {
 		}
 		
 		// 记录日志
-		// redis日志
-		$log = array (
-				'time' => date ( 'Y-m-d H:i:s' ),
-				'client_id' => $this->clientR->client_id,
-				'type' => $pop ['type'] == \redis\StdPop::type ? 1 : 2,
-				'pop_id' => $pop ['id'],
-				'action' => 'pop' 
-		);
-		\redis\PopLog::rpush ( $log );
-		
+        // redis日志
+        $log = array (
+            'time' => date ( 'Y-m-d H:i:s' ),
+            'client_id' => $this->clientR->client_id,
+            'type' => $pop ['type'] == \redis\StdPop::type ? 1 : 2,
+            'pop_id' => $pop ['id'],
+            'action' => 'pop'
+        );
+        \redis\PopLog::rpush ( $log );
+
 		// $log = "时间,用户ID,弹窗类型,弹窗内容ID,\n";
 		$log = date ( 'Y-m-d H:i:s' ) . ",{$this->clientR->client_id},{$pop['type']},{$pop['id']}\n";
 		file_put_contents ( '../log/pop/' . date ( 'Y-m-d' ) . '.log', $log, FILE_APPEND );
