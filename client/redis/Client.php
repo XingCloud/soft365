@@ -301,33 +301,33 @@ class Client extends Base {
 			}
 
             // 需要判断弹窗广告标签是否符合用户标签
-            if (!$v [StdPop::force]) {
-                $canPop = false;
-                // 基于用户之前的tags进行判断
-                $client_tags = $this->hget(static::tags);
-                if ($client_tags == null) {
-                    $client_tags = array();
-                }
+            $canPop = false;
+            // 基于用户之前的tags进行判断
+            $client_tags = $this->hget(static::tags);
+            if ($client_tags == null) {
+                $client_tags = array();
+            }
 
-                $std_poped_tags = $v [StdPop::tags];
-                foreach ($std_poped_tags as $std_poped_tag) {
-                    $counter = $client_tags[$std_poped_tag];
-                    if ($counter == null) {
-                        // 之前没有点过类似tag的广告，添加tag信息到client info，允许弹
-                        $client_tags[$std_poped_tag] = 0;
-                        $canPop = true;
-                    } else if ($counter > 0) {
-                        // 之前点过相同tag的广告(有一个命中即可弹窗)
-                        $canPop = true;
-                    }
-                }
-                //更新tag信息
-                $this->hset(static::tags, $client_tags);
-                if (!$canPop) {
-                    // 没有match到符合的tag，不弹窗
-                    continue;
+            $std_poped_tags = $v [StdPop::tags];
+            foreach ($std_poped_tags as $std_poped_tag) {
+                $counter = $client_tags[$std_poped_tag];
+                if ($counter == null) {
+                    // 之前没有点过类似tag的广告，添加tag信息到client info，允许弹
+                    $client_tags[$std_poped_tag] = 0;
+                    $canPop = true;
+                } else if ($counter > 0) {
+                    // 之前点过相同tag的广告(有一个命中即可弹窗)
+                    $canPop = true;
                 }
             }
+            //更新tag信息
+            $this->hset(static::tags, $client_tags);
+
+            if (!$v [StdPop::force] && !$canPop) {
+                // 没有match到符合的tag，不弹窗
+                continue;
+            }
+
 
 			// 如果通过了所有的检查,记录读取次数并返回结果
 			$poped_key = ($v ['type'] == \redis\StdPop::type) ? static::std_poped : static::content_poped;
