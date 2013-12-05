@@ -7,6 +7,13 @@ class StdPopModel extends Model{
 			0 => '启用',
 			1 => '停用'
 	);
+
+    // 是否强制
+
+    static public $force = array(
+        0 => '是',
+        1 => '非'
+    );
 	
 	protected $_validate = array (
 		// 标题留空，让客户端处理
@@ -30,7 +37,8 @@ class StdPopModel extends Model{
 		array ("max_times",'/^\d{1,4}$/','连续弹出次数只能为9999以内的数字。'),
 		array ("weight",'require','权重不能为空。'),
 		array ("weight",'/^\d{1,4}$/','权重只能为9999以内的数字。'),
-		array ("max_people",'/^\d+$/','指定人数只能是数字。')
+		array ("max_people",'/^\d+$/','指定人数只能是数字。'),
+        array ("tags",'require','标签以逗号分隔。')
 	);
 	protected $_auto = array (
 		array('add_time','time',1,'function'),

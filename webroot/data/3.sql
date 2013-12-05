@@ -89,3 +89,8 @@ ALTER TABLE `pop_soft365`.`oemid` ADD COLUMN `desc` VARCHAR(255) NOT NULL DEFAUL
 
 
 ALTER TABLE `pop_soft365`.`stat` ADD COLUMN `user_id` INT NOT NULL DEFAULT 0 COMMENT '所属用户'  AFTER `up_time` ;
+
+
+--2013-12-04
+ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `tags` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '标签'  AFTER `id` ;
+ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `force` TINYINT NOT NULL DEFAULT 1 COMMENT '强制(1,强制;0,非强制)'  AFTER `disabled` ;

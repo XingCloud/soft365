@@ -26,7 +26,9 @@ class StdPopAction extends Action {
 			'lang',
 			'max_people',
 			'disabled',
-			'oemid' 
+			'oemid' ,
+            'tags' ,
+            'force'
 	);
 	
 	//
@@ -58,6 +60,9 @@ class StdPopAction extends Action {
 				$v ['max_people'] = '不限';
 			if (empty ( $v ['title'] ))
 				$v ['title'] = '默认';
+            if(!empty($v['tags']) && is_array($v['tags']))
+                $v['tags'] = join($v['tags'],',');
+
 		}
 		// dump($this->model->getLastSql());
 		$pagination = $page->show ();
@@ -108,6 +113,9 @@ class StdPopAction extends Action {
 		foreach ( $this->fields as $v ) {
 			$data [$v] = $_POST [$v];
 		}
+
+        $data['tags'] = explode(',',$_POST['tags']) ;
+
 		// 检查表单
 		if ($this->model->create ()) {
 			$is_admin = UserAction::is_admin ();
