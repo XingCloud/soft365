@@ -75,9 +75,20 @@ class Pop extends \Yaf\Controller_Abstract {
         $client_tags = $this->clientR->hget(\redis\Client::tags);
         $pops = \redis\PopSortByWeight::get ();
         foreach ($pops as $pop) {
-
+            $pop_id_tmp = $pop['id'];
+            if ($pop_id == $pop_id_tmp) {
+                // 找到匹配id,更新tags的信息
+                $pop_tags = $pop['tags'];
+                foreach($pop_tags as $tag) {
+                    $counter = $client_tags[$tag];
+                    if ($counter == null) {
+                        $counter = 0;
+                    }
+                    $client_tags[$tag] = ++$counter;
+                }
+            }
         }
-
+        $this->clientR->hset(\redis\Client::tags, $client_tags);
 
 		// 记录日志
         // redis日志
