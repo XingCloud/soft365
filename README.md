@@ -48,7 +48,7 @@ xdebug.profiler_output_dir="/tmp/xdebug/"
 
 ### 第四步 配置application的运行环境
 
-有几种方式可以启动php应用(apache/nginx/php-fpm.../存php-cgi)，php5.4.0自带了一个web server，
+有几种方式可以启动php应用(apache/nginx/php-fpm.../纯php-cgi)，php5.4.0自带了一个web server，
 可以很方便的在phpstorm里面启起来．
 
 Run ->  edit configuration -> + ->　选择php build-in web server, host填写`localhost`,port填`8080`
