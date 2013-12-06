@@ -38,7 +38,7 @@ class StdPopModel extends Model{
 		array ("weight",'require','权重不能为空。'),
 		array ("weight",'/^\d{1,4}$/','权重只能为9999以内的数字。'),
 		array ("max_people",'/^\d+$/','指定人数只能是数字。'),
-        array ("tags",'require','标签以逗号分隔。')
+        array ("tags",'/^\d+(,\d+)*$/','标签以逗号分隔。')
 	);
 	protected $_auto = array (
 		array('add_time','time',1,'function'),
