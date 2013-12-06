@@ -78,7 +78,7 @@ class Pop extends \Yaf\Controller_Abstract {
             $pop_id_tmp = $pop['id'];
             if ($pop_id == $pop_id_tmp) {
                 // 找到匹配id,更新tags的信息
-                $pop_tags = $pop['tags'];
+                $pop_tags = explode(',', $pop['tags'] );
                 foreach($pop_tags as $tag) {
                     $counter = $client_tags[$tag];
                     if ($counter == null) {
