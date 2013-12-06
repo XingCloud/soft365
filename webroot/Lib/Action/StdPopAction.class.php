@@ -61,9 +61,6 @@ class StdPopAction extends Action {
 				$v ['max_people'] = '不限';
 			if (empty ( $v ['title'] ))
 				$v ['title'] = '默认';
-            if(!empty($v['tags']) && is_array($v['tags']))
-                $v['tags'] = join($v['tags'],',');
-
 		}
 		// dump($this->model->getLastSql());
 		$pagination = $page->show ();
@@ -115,8 +112,6 @@ class StdPopAction extends Action {
 			$data [$v] = $_POST [$v];
 		}
 
-        $data['tags'] = explode(',',$_POST['tags']) ;
-
 		// 检查表单
 		if ($this->model->create ()) {
 			$is_admin = UserAction::is_admin ();
@@ -162,6 +157,7 @@ class StdPopAction extends Action {
 			
 			// 保存成功
 			if (! $error = $this->model->getDbError ()) {
+                $data['tags'] = explode(',',$data['tags']);
 				$this->saveRedis ( $data );
 				$this->success ( "success", "index" );
 			} else // 如果执行中出错
