@@ -65,7 +65,7 @@ Run ->  edit configuration -> + -> 选择php web application,server选择刚刚�
 
 代码里面设个断点，选择刚刚创建的configuration然后点击工具栏上的debug按钮．
 
-webroot地下添加test.php测试:
+webroot底下添加test.php，localhost:8080/test.php:
 
 ```php
 <html>
