@@ -54,18 +54,18 @@ class RedisBaseModel {
 		if (strtolower ( substr ( $method, - 4 ) ) == 'many') {
 			print_r ( $val );
 			$method = substr ( $method, 0, - 4 );
-			$ps = [ ];
+			$ps = array();
 			// 果有3个参数,且最后一个是数组
 			if (is_array ( $params [2] )) {
-				$ps = array_merge ( [ 
+				$ps = array_merge (  array(
 						$params [0],
 						$params [1] 
-				], $params [2] );
+				), $params [2] );
 			} 			// 果有两个参数,且最后一个是数组
 			elseif (is_array ( $params [1] )) {
-				$ps = array_merge ( [ 
+				$ps = array_merge ( array( 
 						$params [0] 
-				], $params [1] );
+				), $params [1] );
 			} 			// 果只有一个参数,且它是数组
 			elseif (is_array ( $params [0] )) {
 				$ps = $params [0];
@@ -74,9 +74,9 @@ class RedisBaseModel {
 		else
 			$ps = $params;
 		if (! is_array ( $ps ))
-			$ps = [ 
+			$ps = array( 
 					$ps 
-			];
+			);
 			// 取得要操作的key
 		$key = empty ( $obj ) ? static::key () : $obj->getKey ();
 		// 把key强制作为参数
