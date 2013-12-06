@@ -11,8 +11,8 @@ class StdPopModel extends Model{
     // 是否强制
 
     static public $force = array(
-        0 => '是',
-        1 => '非'
+        1 => '是',
+        0 => '非'
     );
 	
 	protected $_validate = array (
