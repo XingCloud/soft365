@@ -53,11 +53,13 @@ xdebug.profiler_output_dir="/tmp/xdebug/"
 
 Run ->  edit configuration -> + ->　选择php build-in web server, host填写`localhost`,port填`8080`
 (默认80没有权限监听)，Document root填`/home/wcharlie/workspace/soft365/webroot`,接着点界面上的三角
-run按钮就可以在phpstorm里面启动8080,另外会启动debug端口9000,见上面php.ini的配置．
+run按钮就可以在phpstorm里面启动8080,另外会启动debug端口9000,phpstorm就是通过这个端口获取调试信息，
+见上面php.ini的配置．
 
-### 第四步骤 增加php server
+### 第四步 增加php server
 
-Project -> Settings -> PHP ->　Servers -> + ,根据上一步配置添加一个server叫php builit-in server
+Project -> Settings -> PHP ->　Servers -> + ,根据上一步配置添加一个server叫php builit-in server，下
+一步配置debug的时候会用到．
 
 ### 第五步 设置断点，启动debug
 
@@ -65,7 +67,7 @@ Run ->  edit configuration -> + -> 选择php web application,server选择刚刚�
 
 代码里面设个断点，选择刚刚创建的configuration然后点击工具栏上的debug按钮．
 
-webroot底下添加test.php，localhost:8080/test.php:
+测试:webroot底下添加test.php，localhost:8080/test.php:
 
 ```php
 <html>
