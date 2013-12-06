@@ -37,6 +37,7 @@ class StdPopAction extends Action {
 		$this->model = new StdPopModel ();
 		$this->redisModel = new StdPopRedisModel ();
 		$this->assign ( 'disabled', StdPopModel::$disabled );
+        $this->assign ( 'force', StdPopModel::$force);
 	}
 	
 	// 列表
