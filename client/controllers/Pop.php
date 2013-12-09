@@ -90,6 +90,9 @@ class Pop extends \Yaf\Controller_Abstract {
         }
         $this->clientR->hset(\redis\Client::tags, $client_tags);
 
+        //更新mysql里的tags信息
+        \redis\UidTagQueue::rpush($this->clientR->client_id);
+
 		// 记录日志
         // redis日志
         $log = array (

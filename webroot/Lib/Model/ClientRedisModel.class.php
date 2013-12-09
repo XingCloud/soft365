@@ -15,6 +15,12 @@ class ClientRedisModel extends RedisBaseModel {
 	
 	// 用户ID
 	public $client_id = '';
+
+    // 用户点击过得tags信息
+    const tags = 'tags';
+
+    // 用户数据
+    protected $data = array ();
 	
 	// 创建对象时必须传入用户ID
 	function __construct($client_id) {
@@ -32,4 +38,11 @@ class ClientRedisModel extends RedisBaseModel {
 	static function allKeys() {
 		return static::keys ( static::redis_key . '*' );
 	}
+
+    // 取得数据
+    function hget($key) {
+        if (empty ( $this->data [$key] ))
+            $this->data = $this->hgetall ();
+        return $this->data [$key];
+    }
 }
