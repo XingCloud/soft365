@@ -11,6 +11,12 @@ class PopSortByWeightRedisModel extends RedisBaseModel {
 		$std_pop = StdPopRedisModel::hvals ();
 		$content_pop = ContentPopRedisModel::hvals ();
 		$data = static::getSortList($std_pop, $content_pop);
+
+        $data = array_filter($data, function ($v) {
+            if ($v['$disabled']) return false;
+            return true;
+        });
+
 		// 存进列表
 		static::set ( $data );
 	}
@@ -38,6 +44,8 @@ class PopSortByWeightRedisModel extends RedisBaseModel {
 			$content_pop [$k] ['type'] = ContentPopRedisModel::type;
 			// 合并数据
 		$data = array_merge ( $std_pop, $content_pop );
+
+
 		// 按权重排序
 		usort ( $data, function ($a, $b) {
 			$a ['weight'] = intval ( $a ['weight'] );
