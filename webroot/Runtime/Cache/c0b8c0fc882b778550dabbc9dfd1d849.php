@@ -120,6 +120,7 @@
 						<tr>
 							<th>数据ID</th>
 							<th>标题</th>
+                            <th>标签</th>
 							<th>权重</th>
 							<th>指定语言</th>
 							<th>指定国家</th>
@@ -137,7 +138,10 @@
 						<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pop): $mod = ($i % 2 );++$i;?><tr>
 							<td><?php echo ($pop["id"]); ?></td>
 							<td><a target="_blank" href='<?php echo ($pop["url"]); ?>' ><?php echo ($pop["title"]); ?></a>
-								<?php if($pop['disabled'] == 1): ?><b style='color:red;'>[停用]</b><?php endif; ?></td>
+								<?php if($pop['disabled'] == 1): ?><b style='color:red;'>[停用]</b><?php endif; ?>
+                                <?php if($pop['force'] == 1): ?><b style='color:red;'>[强制] </b><?php endif; ?>
+                            </td>
+                            <td><?php echo ($pop['tags']); ?></td>
 							<td><?php echo ($pop["weight"]); ?></td>
 							<td><?php echo ($pop["lang"]); ?></td>
 							<td><?php echo ($pop["country"]); ?></td>

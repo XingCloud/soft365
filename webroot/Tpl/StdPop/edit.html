@@ -29,6 +29,25 @@
 					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
 				</div>
 			</div>
+
+            <div class="control-group">
+                <label for="inputOem" class="control-label">是否强制</label>
+                <div class="controls">
+                     <select id="force" name="force">
+                        <volist name="force" id="v" >
+                            <option value="{$key}" <if condition="$key eq $pop['force']">selected</if> >{$v}</option>
+                        </volist>
+                    </select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+                </div>
+            </div>
+
+        <div class="control-group">
+            <label for="inputOem" class="control-label">标签</label>
+            <div class="controls">
+                <input type="text" placeholder="tags" id="title" name="tags" value="{$pop['tags']}" /> <span
+                class="help-inline error"><font color="#FF0000">*</font></span>
+            </div>
+        </div>
 			
 			<div class="control-group">
 				<label for="inputOem" class="control-label">指定oemid</label>
@@ -41,6 +60,7 @@
 					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
 				</div>
 			</div>
+
 			
 			<div class="control-group">
 				<label for="inputOem" class="control-label">标题</label>

@@ -129,6 +129,23 @@
 					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
 				</div>
 			</div>
+
+            <div class="control-group">
+                <label for="inputOem" class="control-label">是否强制</label>
+                <div class="controls">
+                     <select id="force" name="force">
+                        <?php if(is_array($force)): $i = 0; $__LIST__ = $force;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($key); ?>" <?php if($key == $pop['force']): ?>selected<?php endif; ?> ><?php echo ($v); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+                </div>
+            </div>
+
+        <div class="control-group">
+            <label for="inputOem" class="control-label">标签</label>
+            <div class="controls">
+                <input type="text" placeholder="tags" id="title" name="tags" value="<?php echo ($pop['tags']); ?>" /> <span
+                class="help-inline error"><font color="#FF0000">*</font></span>
+            </div>
+        </div>
 			
 			<div class="control-group">
 				<label for="inputOem" class="control-label">指定oemid</label>
@@ -139,6 +156,7 @@
 					</select> <span class="help-inline error"><font color="#FF0000">*</font></span>
 				</div>
 			</div>
+
 			
 			<div class="control-group">
 				<label for="inputOem" class="control-label">标题</label>

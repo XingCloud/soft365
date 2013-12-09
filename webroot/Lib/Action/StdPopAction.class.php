@@ -26,7 +26,9 @@ class StdPopAction extends Action {
 			'lang',
 			'max_people',
 			'disabled',
-			'oemid' 
+			'oemid' ,
+            'tags' ,
+            'force'
 	);
 	
 	//
@@ -35,6 +37,7 @@ class StdPopAction extends Action {
 		$this->model = new StdPopModel ();
 		$this->redisModel = new StdPopRedisModel ();
 		$this->assign ( 'disabled', StdPopModel::$disabled );
+        $this->assign ( 'force', StdPopModel::$force);
 	}
 	
 	// 列表
@@ -108,6 +111,7 @@ class StdPopAction extends Action {
 		foreach ( $this->fields as $v ) {
 			$data [$v] = $_POST [$v];
 		}
+
 		// 检查表单
 		if ($this->model->create ()) {
 			$is_admin = UserAction::is_admin ();
@@ -153,6 +157,7 @@ class StdPopAction extends Action {
 			
 			// 保存成功
 			if (! $error = $this->model->getDbError ()) {
+                $data['tags'] = explode(',',$data['tags']);
 				$this->saveRedis ( $data );
 				$this->success ( "success", "index" );
 			} else // 如果执行中出错

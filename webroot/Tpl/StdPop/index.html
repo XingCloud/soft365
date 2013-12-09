@@ -18,6 +18,7 @@
 						<tr>
 							<th>数据ID</th>
 							<th>标题</th>
+                            <th>标签</th>
 							<th>权重</th>
 							<th>指定语言</th>
 							<th>指定国家</th>
@@ -36,7 +37,10 @@
 						<tr>
 							<td>{$pop["id"]}</td>
 							<td><a target="_blank" href='{$pop["url"]}' >{$pop["title"]}</a>
-								<if condition="$pop['disabled'] eq 1"><b style='color:red;'>[停用]</b></if></td>
+								<if condition="$pop['disabled'] eq 1"><b style='color:red;'>[停用]</b></if>
+                                <if condition="$pop['force'] eq 1"><b style='color:red;'>[强制] </b></if>
+                            </td>
+                            <td>{$pop['tags']}</td>
 							<td>{$pop["weight"]}</td>
 							<td>{$pop["lang"]}</td>
 							<td>{$pop["country"]}</td>

@@ -46,6 +46,9 @@ class Client extends Base {
 	
 	// 用户数据
 	protected $data = array ();
+
+    // 标签数据
+    const tags = 'tags';
 	
 	// 创建对象时必须传入用户ID
 	function __construct($client_id) {
@@ -237,15 +240,17 @@ class Client extends Base {
 		foreach ( $pops as $v ) {
 			// 要搜索的记录
 			$poped = ($v ['type'] == \redis\StdPop::type) ? $std_poped : $content_poped;
-			
-			// 首先检查所属管理员是否匹配
+
+            // 首先检查是否已经停用了
+            if ($v [\redis\StdPop::disabled]) {
+                continue;
+            }
+
+			// 所属管理员是否匹配
 			if ($v [\redis\StdPop::user_id] != $user_id) {
 				continue;
 			}
-			// 如果已经停用了
-			if ($v [\redis\StdPop::disabled]) {
-				continue;
-			}
+
 			// 如果限制了时间
 			if ($v [StdPop::end_time] != '00:00:00') {
 				// 检查时间
@@ -294,6 +299,36 @@ class Client extends Base {
 						continue;
 				}
 			}
+
+            // 需要判断弹窗广告标签是否符合用户标签
+            $canPop = false;
+            // 基于用户之前的tags进行判断
+            $client_tags = $this->hget(static::tags);
+            if ($client_tags == null) {
+                $client_tags = array();
+            }
+
+            $std_poped_tags = explode (',',$v [StdPop::tags]);
+            foreach ($std_poped_tags as $std_poped_tag) {
+                $counter = $client_tags[$std_poped_tag];
+		    if (!array_key_exists($std_poped_tag, $client_tags)) {
+                    // 之前没有点过类似tag的广告，添加tag信息到client info，允许弹
+                    $client_tags[$std_poped_tag] = 0;
+                    $canPop = true;
+                } else if ($counter > 0) {
+                    // 之前点过相同tag的广告(有一个命中即可弹窗)
+                    $canPop = true;
+                }
+            }
+            //更新tag信息
+            $this->hset(static::tags, $client_tags);
+
+            if (!$v [StdPop::force] && !$canPop) {
+                // 没有match到符合的tag，不弹窗
+                continue;
+            }
+
+
 			// 如果通过了所有的检查,记录读取次数并返回结果
 			$poped_key = ($v ['type'] == \redis\StdPop::type) ? static::std_poped : static::content_poped;
 			$poped [$v ['id']] [static::read_times] ++;
