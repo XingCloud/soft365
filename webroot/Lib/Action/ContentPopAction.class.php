@@ -28,7 +28,7 @@ class ContentPopAction extends StdPopAction {
 	// 构造方法
 	function __construct() {
 		parent::__construct ();
-		$this->model = new ContentPopModel ();
+		$this->popModel = new ContentPopModel ();
 		$this->redisModel = new ContentPopRedisModel ();
 		$this->assign ( 'sub_type', ContentPopModel::$sub_type );
 		$this->assign ( 'app_type', ContentPopModel::$app_type );
