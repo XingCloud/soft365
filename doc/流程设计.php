@@ -13,7 +13,7 @@ redis中
 					date = date(),
 					#当日标准弹窗次数
 					today_std_pop_times = int,
-					#当日标准弹窗次数
+					#当日内容弹窗次数
 					today_content_pop_times = int
 				]),
                 #用户与标准弹窗关系列表

@@ -1,0 +1,56 @@
+mysql:
+
+	client: 
+	  pop#checkClient存到redis#tmp_client,crontabaction#saveClientToMysql每分钟异步到mysql#client
+
+	content_pop:
+	  继承自stdpopaction,行为一样．
+
+	std_pop:
+	  stdpopaction#save存到mysql#std_pop, 没开始的和过期的在redis#std_pop中删除，接着RefreshPopModel#doRefresh:获取所有期间内的mysql#std_pop，
+          存入(先删除)redis#std_pop.#todo#前面一步是不是多余的？按权重排序redis#std_pop和redis#content_pop之后存到redis#pop_sort_by_weight
+	  
+	country/lang:
+	  只存mysql，供添加stdpop时选择
+
+	oemid:
+	  OemidAction#save存到mysql，OemidUserRedisModel#refresh重新同步一遍数据到redis#oemid_user	  
+
+	pop_log:
+	  pop#getAction存到redis#pop_log，crontabaction#savePopLogToMysql每分钟异步到mysql#pop_log
+
+	user:
+
+
+redis:
+
+tmp_client:
+
+pop_log:
+
+
+
+    server  {
+        server_name  pop.soft365.com;
+        index index.php;
+        #开头是pop，然后是[?#/]中的一个，然后可以加任意东西。转发到client.php
+        rewrite ^/(Pop)((?|/|#).*)?$ /client.php;
+        rewrite ^([^\.]+)$ /index.php?s=$1;
+        root  /var/www/pop.soft365.com/webroot;
+
+        location ~ .*\.(php|php5)?$     {
+            root          /var/www/pop.soft365.com/webroot;
+            include       fastcgi_params;
+        }
+
+        access_log  /var/log/nginx/pop.soft365.log  main;
+    }
+
+
+ 
+http://localhost:8080/client.php/pop/get/?userid=366d8644866461e7f6da7d9e39773532&product=Desk365&version=1.14.20&language=en_us&random=14632176
+
+
+
+
+

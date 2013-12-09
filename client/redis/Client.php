@@ -119,7 +119,7 @@ class Client extends Base {
 			// 取得用户的弹窗记录
 			$old = $this->hget ( $v ['poped_key'] );
 			// 取得弹窗内容
-			$pops = $v ['redisModel']->hgetall ();
+			$pops = $v ['redisModel']->hgetall (); //
 			// 把需要保留的找出来
 			$stay = array ();
 			if (! empty ( $old )) {
@@ -135,8 +135,8 @@ class Client extends Base {
 					}
 				}
 			}
-			// 把需要保留的数据再放回redis中
-			$this->hset ( $v ['poped_key'], $stay );
+			// 把需要保留的数据再放回redis中                                                k2                   v2
+			$this->hset ( $v ['poped_key'], $stay ); //client_uid => {"std_poped" => {"素材1"=> {read_times=> ,pop_times=> } , "素材2"=> {}}}
 		}
 	}
 	
@@ -214,7 +214,7 @@ class Client extends Base {
 			return false;
 		}
 		// 如果弹窗总次数已到最大，不弹
-		$max_times = \redis\Config::max_pop_times ( $user_id );
+		$max_times = \redis\Config::max_pop_times ( $user_id ); //TODO wcl config is global not user specific? 这个user_id是产品的id,为1或者2,见Pop.getUserId
 		if ($status [static::today_std_pop_times] + $status [static::today_content_pop_times] >= $max_times)
 			return false;
 		$pop = $this->getOnePop ( $status, $request );

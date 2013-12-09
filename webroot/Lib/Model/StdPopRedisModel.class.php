@@ -1,9 +1,9 @@
 <?php
-//标准弹窗的redis操作模型，Hash结构
+//标准弹窗的redis操作模型，Hash结构, 只会保存可用的stdpop,参见 StdPopAction.saveRedis
 class StdPopRedisModel extends RedisBaseModel {
 	
 	// redis键名
-	const redis_key = 'std_pop';
+	const redis_key = 'std_pop'; //TODO wcl didn't find this key in redis
 	
 	// 弹窗类型
 	const type = 'std_pop';

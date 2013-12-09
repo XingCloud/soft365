@@ -5,6 +5,6 @@ namespace redis;
 class PopSortByWeight extends Base {
 	
 	// redis键名
-	const redis_key = 'pop_sort_by_weight';
+	const redis_key = 'pop_sort_by_weight'; //TODO wcl 为什么看到的是string类型
 	
 }

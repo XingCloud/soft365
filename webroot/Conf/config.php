@@ -4,10 +4,10 @@ return array(
 		'DEFAULT_MODULE'=>'Index', //默认模块
 		'URL_MODEL'=>'2', //URL模式
 		'DB_TYPE'    => 'mysql',	    //使用的数据库类型
-		'DB_HOST'    => '127.0.0.1',
+		'DB_HOST'    => '',
 		'DB_NAME'    => 'pop_soft365',	    //数据库名
 		'DB_USER'    => 'root',	    //访问数据库账号
-		'DB_PWD'     => '123456',       //访问数据库密码
+		'DB_PWD'     => 'P@ssw0rd',       //访问数据库密码
 		'DB_PORT'    => '3306',
 		'DB_PREFIX'=>'',	    //表前缀
 		'SHOW_PAGE_TRACE'=>false,

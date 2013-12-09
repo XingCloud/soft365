@@ -6,7 +6,7 @@ class OemidUserRedisModel extends RedisBaseModel {
 	const redis_key = 'oemid_user';
 	
 	// 刷新数据
-	static function refresh(){
+	static function     refresh(){
 		$model = new OemidModel();
 		$data = $model->select();
 		foreach($data as $v)
