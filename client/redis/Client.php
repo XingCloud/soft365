@@ -308,7 +308,7 @@ class Client extends Base {
                 $client_tags = array();
             }
 
-            $std_poped_tags = $v [StdPop::tags];
+            $std_poped_tags = explode (',',$v [StdPop::tags]);
             foreach ($std_poped_tags as $std_poped_tag) {
                 $counter = $client_tags[$std_poped_tag];
                 if ($counter == null) {
