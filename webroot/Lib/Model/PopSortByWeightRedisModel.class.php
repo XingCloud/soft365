@@ -13,7 +13,7 @@ class PopSortByWeightRedisModel extends RedisBaseModel {
 		$data = static::getSortList($std_pop, $content_pop);
 
         $data = array_filter($data, function ($v) {
-            if ($v['$disabled']) return false;
+            if ($v['disabled']) return false;
             return true;
         });
 
