@@ -154,7 +154,9 @@ class StdPopAction extends Action {
 				$this->popModel->save ( $data );
 
                 // 新建 tag表
-
+                foreach(explode(',',$data['tags']) as $tag){
+                    TagModel::autoCreateTagTable($tag);
+                }
 
 			} else { // 添加
 				$data ['add_time'] = time ();
