@@ -38,6 +38,8 @@ class PopSortByWeightRedisModel extends RedisBaseModel {
 			$content_pop [$k] ['type'] = ContentPopRedisModel::type;
 			// 合并数据
 		$data = array_merge ( $std_pop, $content_pop );
+
+
 		// 按权重排序
 		usort ( $data, function ($a, $b) {
 			$a ['weight'] = intval ( $a ['weight'] );
