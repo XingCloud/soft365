@@ -139,7 +139,7 @@ class Client extends Base {
 				}
 			}
 			// 把需要保留的数据再放回redis中                                                k2                   v2
-			$this->hset ( $v ['poped_key'], $stay ); //client_uid => {"std_poped" => {"素材1"=> {read_times=> ,pop_times=> } , "素材2"=> {}}}
+			$this->hset ( $v ['poped_key'], $stay ); //client_uid => {"status"=>{},"std_poped" => {"素材1"=> {read_times=> ,pop_times=> } , "素材2"=> {}}}
 		}
 	}
 	
