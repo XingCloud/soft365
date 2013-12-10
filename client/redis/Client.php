@@ -315,6 +315,8 @@ class Client extends Base {
                     // 之前没有点过类似tag的广告，添加tag信息到client info，允许弹
                     $client_tags[$std_poped_tag] = 0;
                     $canPop = true;
+                    //更新mysql的tags信息
+                    \redis\UidTagQueue::rpush($this->client_id);
                 } else if ($counter > 0) {
                     // 之前点过相同tag的广告(有一个命中即可弹窗)
                     $canPop = true;

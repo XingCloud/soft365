@@ -74,5 +74,21 @@ class CrontabAction extends Action {
 	function refreshPop(){
 		RefreshPopModel::doRefresh ();
 	}
+
+    //同步redis里的tags信息到mysql
+    function syncTagsInfoToMysql() {
+        $i = 0;
+        while ($client_id = UidTagQueueRedisModel::lpop()) {
+            $clientModel = new ClientRedisModel($client_id);
+            $client_tags = $clientModel->hget(ClientRedisModel::tags);
+            foreach ($client_tags as $tag => $counter) {
+                $model = TagModel::getModel($tag);
+                $model->select('client_id=' . $client_id)->setField(TagModel::click, $counter);
+            }
+            if(++$i%500==0) {
+                echo $i.$client_id,"\n";
+            }
+        }
+    }
 }
 

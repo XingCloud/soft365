@@ -3,10 +3,12 @@
 class StdPopAction extends Action {
 	
 	// 对应的mysql操作模型
-	protected $model;
+	protected $popModel;
 	
 	// 对应的redis操作模型
 	protected $redisModel;
+
+    protected $tagModel;
 	
 	// 要处理的字段列表
 	protected $fields = array (
@@ -34,7 +36,7 @@ class StdPopAction extends Action {
 	//
 	function __construct() {
 		parent::__construct ();
-		$this->model = new StdPopModel ();
+		$this->popModel = new StdPopModel ();
 		$this->redisModel = new StdPopRedisModel ();
 		$this->assign ( 'disabled', StdPopModel::$disabled );
         $this->assign ( 'force', StdPopModel::$force);
@@ -49,9 +51,9 @@ class StdPopAction extends Action {
 			//
 		import ( "ORG.Util.Page" );
 		$order = "id desc";
-		$totalRows = $this->model->where ( $where )->count ();
+		$totalRows = $this->popModel->where ( $where )->count ();
 		$page = new Page ( $totalRows );
-		$data = $this->model->where ( $where )->order ( $order )->limit ( $page->firstRow . "," . $page->listRows )->select ();
+		$data = $this->popModel->where ( $where )->order ( $order )->limit ( $page->firstRow . "," . $page->listRows )->select ();
 		foreach ( $data as &$v ) {
 			if (empty ( $v ['lang'] ))
 				$v ['lang'] = '不限';
@@ -72,7 +74,7 @@ class StdPopAction extends Action {
 	// 添加
 	public function add() {
 		if ($id = intval ( $_GET ['copy_from_id'] )) {
-			$pop = $this->model->where ( "id=$id" )->find ();
+			$pop = $this->popModel->where ( "id=$id" )->find ();
 			unset ( $pop ['id'] );
 		} else {
 			$pop = array (
@@ -95,7 +97,7 @@ class StdPopAction extends Action {
 	// 编辑
 	public function edit() {
 		$id = $_REQUEST ["id"];
-		$pop = $this->model->where ( "id=$id" )->find ();
+		$pop = $this->popModel->where ( "id=$id" )->find ();
 		$this->assign ( 'countrys', D ( 'Country' )->order ( 'index_no asc' )->select () );
 		$this->assign ( 'langs', D ( 'Lang' )->select () );
 		$where = UserAction::is_admin () ? '1' : 'user_id=' . $_SESSION ['user_id'];
@@ -113,7 +115,7 @@ class StdPopAction extends Action {
 		}
 
 		// 检查表单
-		if ($this->model->create ()) {
+		if ($this->popModel->create ()) {
 			$is_admin = UserAction::is_admin ();
 			// 校验日期和时间
 			if ($data ['start_date'] > $data ['end_date'])
@@ -145,39 +147,45 @@ class StdPopAction extends Action {
 			if ($id = $_POST ['id']) {
 				// 除了管理员，都只能修改自己的消息
 				if (! $is_admin)
-					if (! $this->model->where ( "id={$id} and user_id={$_SESSION['user_id']}" )->count ())
+					if (! $this->popModel->where ( "id={$id} and user_id={$_SESSION['user_id']}" )->count ())
 						$this->error ( '操作非法！' );
 				$data ['id'] = $_POST ['id'];
 				$data ['up_time'] = time ();
-				$this->model->save ( $data );
+				$this->popModel->save ( $data );
+
+                // 新建 tag表
+                foreach(explode(',',$data['tags']) as $tag){
+                    TagModel::autoCreateTagTable($tag);
+                }
+
 			} else { // 添加
 				$data ['add_time'] = time ();
-				$data ['id'] = $this->model->add ( $data );
+				$data ['id'] = $this->popModel->add ( $data );
 			}
 			
 			// 保存成功
-			if (! $error = $this->model->getDbError ()) {
+			if (! $error = $this->popModel->getDbError ()) {
                 $data['tags'] = explode(',',$data['tags']);
 				$this->saveRedis ( $data );
 				$this->success ( "success", "index" );
 			} else // 如果执行中出错
 				$this->error ( $error );
 		} else
-			$this->error ( $this->model->getError () );
+			$this->error ( $this->popModel->getError () );
 	}
 	
 	// 保存redis
-        function saveRedis($data) {
-            $date = date ( 'Y-m-d' );
-            // 把没用的删掉，[没开始的],[过期的]
-            if ($data ['start_date'] > $date || $data ['end_date'] < $date)
-                $this->redisModel->hdel ( $data ['id'] );
-            else {
-                // 否则保存
-                $this->redisModel->save ( $data );
-            }
-            // 刷新弹窗顺序列表,这个和下面那个，开一个就行
-            //PopSortByWeightRedisModel::refresh();
+	function saveRedis($data) {
+		$date = date ( 'Y-m-d' );
+		// 把没用的删掉，[没开始的],[过期的] ,[没启用的]
+		if ($data ['start_date'] > $date || $data ['end_date'] < $date || $data['disabled'])
+			$this->redisModel->hdel ( $data ['id'] );
+		else {
+			// 否则保存
+			$this->redisModel->save ( $data );
+		}
+		// 刷新弹窗顺序列表,这个和下面那个，开一个就行
+		//PopSortByWeightRedisModel::refresh();
 		// 刷新弹窗数据和弹窗顺序列表
 		RefreshPopModel::doRefresh ();
 	}
@@ -185,7 +193,7 @@ class StdPopAction extends Action {
 	// 删除
 	public function destroy() {
 		$id = $_REQUEST [id];
-		$this->model->where ( "id = '$id'" )->delete ();
+		$this->popModel->where ( "id = '$id'" )->delete ();
 		$this->redisModel->hdel ( $id );
 		redirect ( "index" );
 	}
