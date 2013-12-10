@@ -7,3 +7,6 @@
 
 #每分钟同步一次弹窗日志数据
 * * * * * /var/www/pop.soft365.com/webroot/cli.php Crontab savePopLogToMysql >> /var/www/pop.soft365.com/log/savePopLogToMysql.log &2>1
+
+#每分钟同步一次tags信息
+* * * * * /var/www/pop.soft365.com/webroot/cli.php Crontab syncTagsInfoToMysql >> /var/www/pop.soft365.com/log/syncTagsInfoToMysql.log &2>1
