@@ -10,6 +10,6 @@ namespace redis;
 
 //Tag有更改的uid
 class UidTagQueue extends Base{
-    const tag_queue = 'tag_queue';
+    const redis_key = 'tag_queue';
 
 }
