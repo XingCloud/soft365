@@ -11,8 +11,8 @@ class StdPopModel extends Model{
     // 是否强制
 
     static public $force = array(
-        1 => '是',
-        0 => '非'
+        1 => '强制',
+        0 => '非强制'
     );
 	
 	protected $_validate = array (
@@ -38,7 +38,7 @@ class StdPopModel extends Model{
 		array ("weight",'require','权重不能为空。'),
 		array ("weight",'/^\d{1,4}$/','权重只能为9999以内的数字。'),
 		array ("max_people",'/^\d+$/','指定人数只能是数字。'),
-        array ("tags",'/^[a-zA-Z](,[a-zA-Z])*$/','标签以逗号分隔。')
+        array ("tags",'/^\w+(,\w+)*$/','标签由字母、数字、下划线组成，并用逗号分隔。')
 	);
 	protected $_auto = array (
 		array('add_time','time',1,'function'),
