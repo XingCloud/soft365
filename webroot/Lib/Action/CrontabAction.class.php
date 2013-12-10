@@ -81,7 +81,7 @@ class CrontabAction extends Action {
         $client_ids = array();
         while ($client_id = UidTagQueueRedisModel::lpop()) {
             $client_ids [$client_id] = 1;
-            if(++$i%1000==0) {
+            if(++$i%2000==0) {
                 $this->updateMysql($client_ids);
                 $client_ids = array();
                 echo $i.$client_id,"\n";
