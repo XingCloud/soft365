@@ -1,0 +1,36 @@
+<!--头部部分-->
+<include file="Public:header" />
+<include file="Public:sidebar" />
+
+<div id="content" align="center" class="container">
+    <div id="create_alert"></div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="row-fluid">
+                <div align='left'><legend>标签统计数据</legend></div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>标签</th>
+                        <th>人数</th>
+                        <th>次数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="data" id="stat">
+                        <tr>
+                            <td>{$stat[0]}</td>
+                            <td>{$stat[1]}</td>
+                            <td>{$stat[2]}</td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+                <div class="pagination">{$pagination}</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="Public:footer" />
