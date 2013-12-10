@@ -177,8 +177,8 @@ class StdPopAction extends Action {
 	// 保存redis
 	function saveRedis($data) {
 		$date = date ( 'Y-m-d' );
-		// 把没用的删掉，[没开始的],[过期的]
-		if ($data ['start_date'] > $date || $data ['end_date'] < $date)
+		// 把没用的删掉，[没开始的],[过期的] ,[没启用的]
+		if ($data ['start_date'] > $date || $data ['end_date'] < $date || $data['disabled'])
 			$this->redisModel->hdel ( $data ['id'] );
 		else {
 			// 否则保存
