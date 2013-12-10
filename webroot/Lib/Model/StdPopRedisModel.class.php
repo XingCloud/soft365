@@ -3,7 +3,7 @@
 class StdPopRedisModel extends RedisBaseModel {
 	
 	// redis键名
-	const redis_key = 'std_pop'; //TODO wcl didn't find this key in redis
+	const redis_key = 'std_pop';
 	
 	// 弹窗类型
 	const type = 'std_pop';

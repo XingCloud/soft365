@@ -57,37 +57,34 @@ class Pop extends \Yaf\Controller_Abstract {
 		// 用户是否存在
 		if (! $this->clientR->exists ())
 			die ( '0_3 invaid user' );
-			// 弹窗类型
-		if ($_GET ['type'] == '1') // 返回值'1'表示标准弹窗
+
+        // 返回成功状态的弹窗ID
+        $pop_id = intval ( $_GET ['notifyid'] );
+        if (empty ( $pop_id )) {
+            die ( '0_2 invaid notifyid' );
+        }
+
+	    // 弹窗类型
+		if ($_GET ['type'] == '1'){ // 返回值'1'表示标准弹窗
 			$type = \redis\StdPop::type;
-		elseif ($_GET ['type'] == '2') // 返回值'2'表示内容弹窗
+            $pop = \redis\StdPop::hget($pop_id);
+        }elseif ($_GET ['type'] == '2'){ // 返回值'2'表示内容弹窗
 			$type = \redis\ContentPop::type;
-		else { // 其他认为出错
+            $pop = \redis\ContentPop::hget($pop_id);
+        }else { // 其他认为出错
 			die ( '0_1 invaid type' );
 		}
-		// 返回成功状态的弹窗ID
-		$pop_id = intval ( $_GET ['notifyid'] );
-		if (empty ( $pop_id )) {
-			die ( '0_2 invaid notifyid' );
-		}
+
 
         //更新redis里的client tags信息
         $client_tags = $this->clientR->hget(\redis\Client::tags);
-        $pops = \redis\PopSortByWeight::get ();
-        foreach ($pops as $pop) {
-            $pop_id_tmp = $pop['id'];
-            if ($pop_id == $pop_id_tmp) {
-                // 找到匹配id,更新tags的信息
-                $pop_tags = explode(',', $pop['tags'] );
-                foreach($pop_tags as $tag) {
-                    $counter = $client_tags[$tag];
-                    if ($counter == null) {
-                        $counter = 0;
-                    }
-                    $client_tags[$tag] = ++$counter;
-                }
-                break;
+        $pop_tags = explode(',', $pop['tags'] );
+        foreach($pop_tags as $tag) {
+            $counter = $client_tags[$tag];
+            if ($counter == null) {
+                $counter = 0;
             }
+            $client_tags[$tag] = ++$counter;
         }
         $this->clientR->hset(\redis\Client::tags, $client_tags);
 

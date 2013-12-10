@@ -217,7 +217,7 @@ class Client extends Base {
 			return false;
 		}
 		// 如果弹窗总次数已到最大，不弹
-		$max_times = \redis\Config::max_pop_times ( $user_id ); //TODO wcl config is global not user specific? 这个user_id是产品的id,为1或者2,见Pop.getUserId
+		$max_times = \redis\Config::max_pop_times ( $user_id ); //redis#config is global not user specific? 这个user_id是产品的id,为1或者2,见Pop.getUserId
 		if ($status [static::today_std_pop_times] + $status [static::today_content_pop_times] >= $max_times)
 			return false;
 		$pop = $this->getOnePop ( $status, $request );

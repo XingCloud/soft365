@@ -49,7 +49,7 @@ pop_log:
 
  
 http://localhost:8080/client.php/pop/get/?userid=366d8644866461e7f6da7d9e39773532&product=Desk365&version=1.14.20&language=en_us&random=14632176
-
+http://localhost:8080/client.php/pop/click/?userid=366d8644866461e7f6da7d9e39773532&type=1&notifyid=69
 
 mysql#client
 *************************** 1. row ***************************
