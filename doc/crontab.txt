@@ -10,3 +10,6 @@
 
 #每分钟同步一次tags信息
 * * * * * /var/www/pop.soft365.com/webroot/cli.php Crontab syncTagsInfoToMysql >> /var/www/pop.soft365.com/log/syncTagsInfoToMysql.log &2>1
+
+#每5分钟更新统计报表
+*/5 * * * * /var/www/pop.soft365.com/webroot/cli.php Crontab refreshStat >> /var/www/pop.soft365.com/log/refresh.log 2>&1
