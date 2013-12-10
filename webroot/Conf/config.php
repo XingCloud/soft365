@@ -7,7 +7,7 @@ return array(
 		'DB_HOST'    => '',
 		'DB_NAME'    => 'pop_soft365',	    //数据库名
 		'DB_USER'    => 'root',	    //访问数据库账号
-		'DB_PWD'     => 'P@ssw0rd',       //访问数据库密码
+		'DB_PWD'     => '',       //访问数据库密码
 		'DB_PORT'    => '3306',
 		'DB_PREFIX'=>'',	    //表前缀
 		'SHOW_PAGE_TRACE'=>false,

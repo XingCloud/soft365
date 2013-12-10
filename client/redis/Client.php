@@ -311,7 +311,7 @@ class Client extends Base {
             $std_poped_tags = explode (',',$v [StdPop::tags]);
             foreach ($std_poped_tags as $std_poped_tag) {
                 $counter = $client_tags[$std_poped_tag];
-		    if (!array_key_exists($std_poped_tag, $client_tags)) {
+		        if (!array_key_exists($std_poped_tag, $client_tags)) {
                     // 之前没有点过类似tag的广告，添加tag信息到client info，允许弹
                     $client_tags[$std_poped_tag] = 0;
                     $canPop = true;
