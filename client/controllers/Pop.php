@@ -86,6 +86,7 @@ class Pop extends \Yaf\Controller_Abstract {
                     }
                     $client_tags[$tag] = ++$counter;
                 }
+                break;
             }
         }
         $this->clientR->hset(\redis\Client::tags, $client_tags);
