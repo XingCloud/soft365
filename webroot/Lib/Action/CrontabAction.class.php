@@ -100,17 +100,22 @@ class CrontabAction extends Action {
             $client_tags = $clientModel->hget(ClientRedisModel::tags);
             foreach ($client_tags as $tag => $counter) {
                 $sqls = $tag_sql_set [$tag];
+                if ($sqls == null) {
+                    $sqls = array();
+                }
                 $sql = 'replace into ' . TagModel::tableName($tag) . '('. TagModel::client_id . ',' . TagModel::click
                     . ') values("' . $client_id_update . '",' . $counter . ');';
-                $sqls = $sqls . $sql;
+                array_push($sqls, $sql);
                 $tag_sql_set [$tag] = $sqls;
             }
         }
 
-        // 批量执行sql语句
+        //执行sql语句
         foreach ($tag_sql_set as $tag => $sqls) {
             $model = TagModel::getModel($tag);
-            $model->query($sqls, true);
+            foreach ($sqls as $sql) {
+                $model->execute($sql);
+            }
         }
     }
 }
