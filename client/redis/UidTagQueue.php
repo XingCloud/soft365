@@ -9,7 +9,7 @@ namespace redis;
  */
 
 //Tag有更改的uid
-class UidTagQueue {
+class UidTagQueue extends Base{
     const tag_queue = 'tag_queue';
 
 }
