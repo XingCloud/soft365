@@ -153,14 +153,14 @@ class StdPopAction extends Action {
 				$data ['up_time'] = time ();
 				$this->popModel->save ( $data );
 
-                // 新建 tag表
-                foreach(explode(',',$data['tags']) as $tag){
-                    TagModel::autoCreateTagTable($tag);
-                }
 
 			} else { // 添加
 				$data ['add_time'] = time ();
 				$data ['id'] = $this->popModel->add ( $data );
+                // 新建 tag表
+                foreach(explode(',',$data['tags']) as $tag){
+                    TagModel::autoCreateTagTable($tag);
+                }
 			}
 			
 			// 保存成功
