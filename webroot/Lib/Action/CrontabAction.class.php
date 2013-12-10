@@ -110,7 +110,7 @@ class CrontabAction extends Action {
         // 批量执行sql语句
         foreach ($tag_sql_set as $tag => $sqls) {
             $model = TagModel::getModel($tag);
-            $model->query($sqls);
+            $model->query($sqls, true);
         }
     }
 }
