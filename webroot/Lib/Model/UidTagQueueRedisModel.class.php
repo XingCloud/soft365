@@ -6,7 +6,6 @@
  * Time: 下午5:03
  * To change this template use File | Settings | File Templates.
  */
-class UidTagQueueRedisModel
-{
-    const tag_queue = 'tag_queue';
+class UidTagQueueRedisModel extends RedisBaseModel {
+    const redis_key = 'tag_queue';
 }

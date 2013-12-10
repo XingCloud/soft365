@@ -78,16 +78,39 @@ class CrontabAction extends Action {
     //同步redis里的tags信息到mysql
     function syncTagsInfoToMysql() {
         $i = 0;
+        $client_ids = array();
         while ($client_id = UidTagQueueRedisModel::lpop()) {
-            $clientModel = new ClientRedisModel($client_id);
-            $client_tags = $clientModel->hget(ClientRedisModel::tags);
-            foreach ($client_tags as $tag => $counter) {
-                $model = TagModel::getModel($tag);
-                $model->select('client_id=' . $client_id)->setField(TagModel::click, $counter);
-            }
-            if(++$i%500==0) {
+            $client_ids [$client_id] = 1;
+            if(++$i%1000==0) {
+                $this->updateMysql($client_ids);
+                $client_ids = array();
                 echo $i.$client_id,"\n";
             }
+        }
+        if (count($client_ids) > 0) {
+            $this->updateMysql($client_ids);
+        }
+    }
+
+    function updateMysql($client_ids) {
+        // 生成sql语句
+        $tag_sql_set = array();
+        foreach ($client_ids as $client_id_update => $val) {
+            $clientModel = new ClientRedisModel($client_id_update);
+            $client_tags = $clientModel->hget(ClientRedisModel::tags);
+            foreach ($client_tags as $tag => $counter) {
+                $sqls = $tag_sql_set [$tag];
+                $sql = 'replace into (' . TagModel::tableName($tag) . ',' . TagModel::click
+                    . ') values("' . $client_id_update . '",' . $counter . ');';
+                $sqls = $sqls . $sql;
+                $tag_sql_set [$tag] = $sqls;
+            }
+        }
+
+        // 批量执行sql语句
+        foreach ($tag_sql_set as $tag => $sqls) {
+            $model = TagModel::getModel($tag);
+            $model->query($sqls);
         }
     }
 }
