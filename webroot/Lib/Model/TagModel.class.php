@@ -22,8 +22,7 @@ class TagModel extends Model{
         $tableName = static::tableName($tag);
         $sql = "CREATE TABLE IF NOT EXISTS `{$tableName}` (
 		  `clientId` varchar(45) binary primary key COMMENT '用户id',
-		  `click` int(11) NOT NULL DEFAULT '0' COMMENT '点击次数',
-		  key `idx_click`(`click`)
+		  `click` int(11) NOT NULL DEFAULT '0' COMMENT '点击次数'
 		) ENGINE=MyIsam DEFAULT CHARSET=utf8 COMMENT='标签点击日志'";
         $model = new StatModel();
         $model->query($sql);
