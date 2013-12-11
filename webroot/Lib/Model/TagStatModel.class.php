@@ -11,7 +11,7 @@ class TagStatModel extends Model{
 
     const tag_name = 'tagName';
     const user_num = 'userNum';
-    const click_num = 'clickNum';
+    const click_num = 'countNum';
 
     static function getModel() {
         return M(static::tableName);
