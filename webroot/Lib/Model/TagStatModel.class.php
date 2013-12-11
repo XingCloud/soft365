@@ -9,16 +9,15 @@
 class TagStatModel extends Model{
     const tableName = 'stat_tag';
 
-    const tag_name = 'tag_name';
-    const user_num = 'user_num';
-    const click_num = 'click_num';
+    const tag_name = 'tagName';
+    const user_num = 'userNum';
+    const click_num = 'clickNum';
 
     static function getModel() {
         return M(static::tableName);
     }
 
     static function autoCreateTagStatTable() {
-
         $sql = "CREATE TABLE IF NOT EXISTS `{static::tableName}` (
 		  `tagName` varchar(45) binary primary key COMMENT '标签名称',
 		  `userNum` int(11) NOT NULL DEFAULT '0' COMMENT '点击人数',
