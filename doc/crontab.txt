@@ -13,3 +13,6 @@
 
 #每5分钟更新统计报表
 */5 * * * * /var/www/pop.soft365.com/webroot/cli.php Crontab refreshStat >> /var/www/pop.soft365.com/log/refresh.log 2>&1
+
+#每5分钟更新统计报表
+*/5 * * * * /var/www/pop.soft365.com/webroot/cli.php Crontab updateTagStat >> /var/www/pop.soft365.com/log/tag_stat.log 2>&1
