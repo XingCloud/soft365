@@ -118,5 +118,32 @@ class CrontabAction extends Action {
             }
         }
     }
+
+    function updateTagStat() {
+        //获取所有存在的tag
+        $tags = array();
+        if (!mysql_connect("","root","")){
+            die("Could not connect to mysql");
+        }
+        $rs = mysql_list_tables("pop_soft365");
+        while($row = mysql_fetch_row($rs)){
+            if(strpos($row[0], "tag_") !== false)
+                array_push($tags,substr($row[0], 4));
+        }
+
+        //逐个统计每个标签
+        $model = TagStatModel::getModel();
+        foreach ( $tags as $tag ){
+            $user_count_sql = sprintf("select count(*) from %s where click>0;", TagModel::tableName($tag));
+            $click_count_sql = sprintf("select sum(click) from %s;", TagModel::tableName($tag));
+
+            $user_count = array_values($model->query($user_count_sql)[0])[0];
+            $click_count = array_values($model->query($click_count_sql)[0])[0];
+            $sql = 'replace into ' . TagStatModel::tableName . '('. TagStatModel::tag_name . ','
+                . TagStatModel::user_num . ',' . TagStatModel::click_num
+                . ') values("' . $tag . '",' . $user_count . ',' . $click_count . ');';
+            $model->execute($sql);
+        }
+    }
 }
 
