@@ -138,7 +138,13 @@ class CrontabAction extends Action {
             $click_count_sql = sprintf("select sum(click) from %s;", TagModel::tableName($tag));
 
             $user_count = array_values($model->query($user_count_sql)[0])[0];
+            if ($user_count == null) {
+                $user_count = 0;
+            }
             $click_count = array_values($model->query($click_count_sql)[0])[0];
+            if ($click_count == null) {
+                $click_count = 0;
+            }
             $sql = 'replace into ' . TagStatModel::tableName . '('. TagStatModel::tag_name . ','
                 . TagStatModel::user_num . ',' . TagStatModel::click_num
                 . ') values("' . $tag . '",' . $user_count . ',' . $click_count . ');';
