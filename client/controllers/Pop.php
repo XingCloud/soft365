@@ -225,6 +225,7 @@ class Pop extends \Yaf\Controller_Abstract {
 		$result = array (
 				'type' => '1',
 				'notifyid' => $pop ['id'],
+                'jsonaction' => $pop['jsonaction'],
 				'content' => array (
 						'title' => $pop ['title'],
 						'url' => $pop ['url'],
@@ -232,7 +233,6 @@ class Pop extends \Yaf\Controller_Abstract {
 						// 为了适应客户端
 						'width' => strval ( intval ( $pop ['width'] ) + 6 ),
 						'height' => strval ( intval ( $pop ['height'] ) + 30 ),
-                        'jsonaction' => $pop['jsonaction'],
 						'closet' => $pop ['live_time'] 
 				) 
 		);

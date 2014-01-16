@@ -97,4 +97,4 @@ ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `force` TINYINT NOT NULL DEFAULT 
 
 
 --2014-01-16
-ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `jsonaction` TEXT NOT NULL DEFAULT '' COMMENT '标签'  AFTER `id` ;
+ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `jsonaction` TEXT NOT NULL DEFAULT '' COMMENT '标签'  AFTER `force` ;
