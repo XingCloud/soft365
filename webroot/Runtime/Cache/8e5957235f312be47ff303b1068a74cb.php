@@ -115,7 +115,7 @@
 <div id="create_alert"></div>
 <div class="container-fluid">
 	<div class="row-fluid">
-		<form class="bs-docs-example form-horizontal" method='post'
+		<form class="bs-docs-example form-horizontal" metphod='post'
 			enctype="multipart/form-data" name="name" id="form1"
 			ACTION="/StdPop/save">
 

@@ -1,4 +1,4 @@
-#!/usr/local/php54/bin/php
+#!/usr/bin/env php
 <?php
 if (isset($_SERVER['HTTP_HOST']) || isset($_SERVER['REMOTE_ADDR'])) exit('denied');
 define('MODE_NAME', 'cli');
