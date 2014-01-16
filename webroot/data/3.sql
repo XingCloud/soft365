@@ -94,3 +94,7 @@ ALTER TABLE `pop_soft365`.`stat` ADD COLUMN `user_id` INT NOT NULL DEFAULT 0 COM
 --2013-12-04
 ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `tags` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '标签'  AFTER `id` ;
 ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `force` TINYINT NOT NULL DEFAULT 1 COMMENT '强制(1,强制;0,非强制)'  AFTER `disabled` ;
+
+
+--2014-01-16
+ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `jsonaction` TEXT NOT NULL DEFAULT '' COMMENT '标签'  AFTER `id` ;

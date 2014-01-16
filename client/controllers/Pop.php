@@ -232,6 +232,7 @@ class Pop extends \Yaf\Controller_Abstract {
 						// 为了适应客户端
 						'width' => strval ( intval ( $pop ['width'] ) + 6 ),
 						'height' => strval ( intval ( $pop ['height'] ) + 30 ),
+                        'jsonaction' => $pop['jsonaction'],
 						'closet' => $pop ['live_time'] 
 				) 
 		);

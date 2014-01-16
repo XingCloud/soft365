@@ -30,7 +30,8 @@ class StdPopAction extends Action {
 			'disabled',
 			'oemid' ,
             'tags' ,
-            'force'
+            'force',
+            'jsonaction'
 	);
 	
 	//

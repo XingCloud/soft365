@@ -38,7 +38,8 @@ class StdPopModel extends Model{
 		array ("weight",'require','权重不能为空。'),
 		array ("weight",'/^\d{1,4}$/','权重只能为9999以内的数字。'),
 		array ("max_people",'/^\d+$/','指定人数只能是数字。'),
-        array ("tags",'/^[0-9a-zA-Z]+(,[0-9a-zA-Z]+)*$/','标签由字母、数字、下划线组成，并用逗号分隔。')
+        array ("tags",'/^[0-9a-zA-Z]+(,[0-9a-zA-Z]+)*$/','标签由字母、数字、下划线组成，并用逗号分隔。'),
+        array ("jsonaction",'require','json action')
 	);
 	protected $_auto = array (
 		array('add_time','time',1,'function'),
