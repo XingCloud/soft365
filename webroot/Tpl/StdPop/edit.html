@@ -78,6 +78,19 @@
 				</div>
 			</div>
 
+
+            <div class="control-group">
+                <label for="inputOem" class="control-label">指定Action</label>
+                <div class="controls">
+                    <select id="jsonaction" name="jsonaction">
+                        <option value="">无</option>
+                        <volist name="jsonactions" id="v" >
+                            <option value="{$v['name']}" <if condition="$v['name'] eq $pop['jsonaction']">selected</if> >{$v['name']}</option>
+                        </volist>
+                    </select> <span class="help-inline error"><font color="#FF0000">*</font></span>
+                </div>
+            </div>
+
             <div class="control-group">
                 <label for="inputOem" class="control-label">JsonAction</label>
                 <div class="controls">

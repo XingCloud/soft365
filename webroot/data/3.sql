@@ -98,3 +98,11 @@ ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `force` TINYINT NOT NULL DEFAULT 
 
 --2014-01-16
 ALTER TABLE `pop_soft365`.`std_pop` ADD COLUMN `jsonaction` TEXT NOT NULL DEFAULT '' COMMENT '标签'  AFTER `force` ;
+
+
+--2014-01-17
+ CREATE TABLE `json` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` TEXT NOT NULL DEFAULT '' COMMENT 'JsonAction',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='JsonAction';

@@ -92,6 +92,7 @@ class StdPopAction extends Action {
 		$this->assign ( 'langs', D ( 'Lang' )->select () );
 		$where = UserAction::is_admin () ? '1' : 'user_id=' . $_SESSION ['user_id'];
 		$this->assign ( 'oemids', D ( 'Oemid' )->where ( $where )->select () );
+        $this->assign ('jsonactions' , D ('Json')->select());
 		$this->display ( "edit" );
 	}
 	
@@ -103,6 +104,7 @@ class StdPopAction extends Action {
 		$this->assign ( 'langs', D ( 'Lang' )->select () );
 		$where = UserAction::is_admin () ? '1' : 'user_id=' . $_SESSION ['user_id'];
 		$this->assign ( 'oemids', D ( 'Oemid' )->where ( $where )->select () );
+        $this->assign ('jsonactions' , D ('Json')->select());
 		$this->assign ( "pop", $pop );
 		$this->display ();
 	}
