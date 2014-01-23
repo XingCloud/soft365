@@ -47,7 +47,7 @@ class Pop extends \Yaf\Controller_Abstract {
 				// 客户端请求间隔时间(分钟)
 				'tminterva' => \redis\Config::hget ( \redis\Config::client_request_space_time ),
 				// 开机到首次弹窗间隔时间
-				'tmstart ' => $conf [\redis\Config::first_pop_space_time] 
+				'tmstart' => $conf [\redis\Config::first_pop_space_time]
 		);
 		echo json_encode ( $array );
 	}
